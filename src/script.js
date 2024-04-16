@@ -219,35 +219,6 @@ function cursor(){
 };
 cursor();
 
-// about gsap
-// var aboutTl = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#about",
-//         start:"-10% 50%",
-//         end:"20% 50%",
-//         // markers:true,
-//         scrub:true,
-//     },
-// });
-// aboutTl
-// .from("#about-img",{
-//     x:-50,
-//     opacity:0,
-//     // duration:0.5,
-// },"a")
-// .from("#about-div2",{
-//     x:50,
-//     opacity:0,
-// },"a")
-// .from("#chakri2",{
-//     x:-50,
-//     opacity:0,
-// },"a")
-// .from("#chakri3",{
-//     x:50,
-//     opacity:0,
-// },"a")
-
 // skills
 // let skillTl=gsap.timeline({
 //     scrollTrigger:{
@@ -323,15 +294,43 @@ function menuBarClose(){
 }
 
 //mobile message
-// var showImg=document.getElementById("showImg");
-// var showMessage=document.getElementById("showMessage");
-// var messageBox=document.getElementById("MBox");
-// var imgBox=document.getElementById("simg");
-// showImg.addEventListener('click', function () {
-//     messageBox.style.display="none";
-//     imgBox.style.display="flex";
-// })
-// showMessage.addEventListener('click',function(){
-//     messageBox.style.display="flex";
-//     imgBox.style.display="none";
-// })
+var showImg=document.getElementById("showImg");
+var showMessage=document.getElementById("showMessage");
+var messageBox=document.getElementById("MBox");
+var imgBox=document.getElementById("simg");
+showImg.addEventListener('click', function () {
+    messageBox.style.display="none";
+    imgBox.style.display="flex";
+})
+showMessage.addEventListener('click',function(){
+    messageBox.style.display="flex";
+    imgBox.style.display="none";
+})
+
+// about gsap
+// var aboutTl = gsap.timeline({
+//     scrollTrigger:{
+//         trigger:"#about",
+//         start:"-10% 50%",
+//         end:"20% 50%",
+//         markers:true,
+//         scrub:true,
+//     },
+// });
+// aboutTl
+// .from("#about-img",{
+//     x:-50,
+//     // opacity:0,
+// },"a")
+// .from("#about-div2",{
+//     x:50,
+//     // opacity:0,
+// },"a")
+// .from("#chakri2",{
+//     x:-50,
+//     // opacity:0,
+// },"a")
+// .from("#chakri3",{
+//     x:50,
+//     // opacity:0,
+// },"a")
