@@ -321,3 +321,15 @@ function menuBarClose(){
     menuBox.style.display="none";
     menutick=false;
 }
+
+//mobile message
+var messageBox=document.getElementById("MBox");
+var imgBox=document.getElementById("simg");
+function showImg(){
+    messageBox.style.display="none";
+    imgBox.style.display="flex";
+}
+function showMessage(){
+    messageBox.style.display="flex";
+    imgBox.style.display="none";
+}
