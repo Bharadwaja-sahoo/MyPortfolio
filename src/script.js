@@ -219,21 +219,6 @@ function cursor(){
 };
 cursor();
 
-// skills
-// let skillTl=gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#skills",
-//         start:"0% 50%",
-//         end:"10% 50%",
-//         // markers:true,
-//         scrub:true,
-//     }
-// });
-// skillTl.from(".tech",{
-//     y:-50,
-//     opacity:0,
-// });
-
 //navbar
 let navTl=gsap.timeline({
     scrollTrigger:{
@@ -284,7 +269,7 @@ function menuBar(){
         menutick=true;
     }
     else{
-        menutick.style.display="none";
+        menuBox.style.display="none";
         menutick=false;
     }
 }
@@ -308,29 +293,44 @@ showMessage.addEventListener('click',function(){
 })
 
 // about gsap
-// var aboutTl = gsap.timeline({
-//     scrollTrigger:{
-//         trigger:"#about",
-//         start:"-10% 50%",
-//         end:"20% 50%",
-//         markers:true,
-//         scrub:true,
-//     },
-// });
-// aboutTl
-// .from("#about-img",{
-//     x:-50,
-//     // opacity:0,
-// },"a")
-// .from("#about-div2",{
-//     x:50,
-//     // opacity:0,
-// },"a")
-// .from("#chakri2",{
-//     x:-50,
-//     // opacity:0,
-// },"a")
-// .from("#chakri3",{
-//     x:50,
-//     // opacity:0,
-// },"a")
+var aboutTl = gsap.timeline({
+    scrollTrigger:{
+        trigger:"#about",
+        start:"-10% 50%",
+        end:"20% 50%",
+        // markers:true,
+        scrub:true,
+    },
+});
+aboutTl
+.from("#about-img",{
+    x:-50,
+    opacity:0,
+},"a")
+.from("#about-div2",{
+    x:50,
+    opacity:0,
+},"a")
+.from("#chakri2",{
+    x:-50,
+    opacity:0,
+},"a")
+.from("#chakri3",{
+    x:50,
+    opacity:0,
+},"a")
+
+// skills
+var skillTl=gsap.timeline({
+    scrollTrigger:{
+        trigger:"#skills",
+        start:"0% 50%",
+        end:"10% 50%",
+        markers:true,
+        scrub:true,
+    }
+});
+skillTl.from(".tech",{
+    y:50,
+    opacity:0,
+});
