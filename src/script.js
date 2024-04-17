@@ -296,8 +296,8 @@ showMessage.addEventListener('click',function(){
 var aboutTl = gsap.timeline({
     scrollTrigger:{
         trigger:"#about",
-        start:"-10% 50%",
-        end:"20% 50%",
+        start:"0% 50%",
+        end:"10% 50%",
         // markers:true,
         scrub:true,
     },
@@ -326,11 +326,11 @@ var skillTl=gsap.timeline({
         trigger:"#skills",
         start:"0% 50%",
         end:"10% 50%",
-        markers:true,
+        // markers:true,
         scrub:true,
     }
 });
 skillTl.from(".tech",{
-    y:50,
+    y:-50,
     opacity:0,
 });
