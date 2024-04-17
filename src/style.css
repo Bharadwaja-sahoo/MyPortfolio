@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    /* transition: all 0.2s; */
+    /* transition: all 0.3s; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 #container {
@@ -352,13 +352,12 @@
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content:space-evenly ;
+    justify-content:center;
     flex-wrap: wrap;
-    gap: 5%;
 }
 .tech-box{
-    width: 20vw;
-    height: 40vh;
+    width: 20%;
+    height: 45%;
     background-color: #b8c1ec;
     display: flex;
     justify-content: center;
@@ -369,6 +368,7 @@
     transition: all 0.5s ease;
     z-index: 1;
     cursor: pointer;
+    margin-inline: 2%;
 }
 .tech-box:hover{
     transform: scale(1.05);
@@ -461,10 +461,10 @@ footer{
     height: 80%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     font-size: 1.2vw;
-    gap: 2%;
+    gap: 10%;
     color: #b8c1ec;
     background-color: #1d2139;
     border-radius: 10px;
@@ -474,30 +474,42 @@ footer{
 }
 .footbox h2{
     position: absolute;
-    top: 0px;
+    top: 5%;
     color: #b8c1ec;
     text-decoration: underline;
     padding: 5px;
 }
 .footbox img{
-    width: 5vw;
+    width: 10vw;
+    transition: all 0.2s;
+}
+.footbox img:hover{
+    border-radius: 100%;
+    filter: grayscale(1);
 }
 .footbox div a{
     text-decoration: none;
     color: #b8c1ec;
 }
+#linkstore{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
 .footlink{
+    width: 3vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     font-size: 2vw;
     color: #b8c1ec;
     transition: all 0.5s ease-in-out;
 }
 .footlink:hover{
-    width: 3vw;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #b8c1ec;
     border-radius: 10px;
     color: #232946;
