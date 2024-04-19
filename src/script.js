@@ -336,7 +336,7 @@ skillTl.from(".tech",{
 });
 //type-write
 var typed = new Typed('#bold', {
-    strings: ['Front-End Developer', 'WebSite Developer','Front-End Developer' , 'Mechanical Engineer'],
+    strings: ['Front-End Developer', 'WebSite Developer','Full-Stack-Java Developer' , 'Mechanical Engineer'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
