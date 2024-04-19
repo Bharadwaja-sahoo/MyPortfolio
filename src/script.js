@@ -334,3 +334,11 @@ skillTl.from(".tech",{
     y:-50,
     opacity:0,
 });
+//type-write
+var typed = new Typed('#bold', {
+    strings: ['Front-End Developer', 'WebSite Developer','Front-End Developer' , 'Mechanical Engineer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop:true
+  });
