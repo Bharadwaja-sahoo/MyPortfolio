@@ -1,4 +1,5 @@
-var input = document.getElementById('checkbox');
+function handelModes(){
+    var input = document.getElementById('checkbox');
 //container
 var toggleColor=document.getElementById("container");
 //nav bar
@@ -24,6 +25,8 @@ var chakri3=document.getElementById("chakri3");
 var aboutimg=document.getElementById("about-img");
 var aboutText=document.getElementById("about-div2");
 // skills
+var sh1=document.getElementById("sh1");
+
 var html=document.getElementById("html");
 var css=document.getElementById("css");
 var js=document.getElementById("js");
@@ -50,6 +53,28 @@ var lboot=document.getElementById("boot-logo");
 var fbook=document.getElementById("fbook");
 var igram=document.getElementById("igram");
 var ldin=document.getElementById("ldin");
+//projects
+var pBox1=document.getElementById("pbox1");
+var pBox2=document.getElementById("pbox2");
+var pBox3=document.getElementById("pbox3");
+var pBox4=document.getElementById("pbox4");
+var pBox5=document.getElementById("pbox5");
+var pBox6=document.getElementById("pbox6");
+
+var pbutton1=document.getElementById("pbutton1");
+var pbutton2=document.getElementById("pbutton2");
+var pbutton3=document.getElementById("pbutton3");
+var pbutton4=document.getElementById("pbutton4");
+var pbutton5=document.getElementById("pbutton5");
+var pbutton6=document.getElementById("pbutton6");
+
+var pview1=document.getElementById("pview1");
+var pview2=document.getElementById("pview2");
+var pview3=document.getElementById("pview3");
+var pview4=document.getElementById("pview4");
+var pview5=document.getElementById("pview5");
+var pview6=document.getElementById("pview6");
+
 
 input.addEventListener('change',function(){
     if(this.checked) {
@@ -110,6 +135,8 @@ input.addEventListener('change',function(){
         box7.style.backgroundColor="#232946";
         box7.style.boxShadow="0px 0px 20px #232946";
         // skills
+        sh1.style.color= "#232946";
+
         html.style.color="#b8c1ec";
         css.style.color="#b8c1ec";
         js.style.color="#b8c1ec";
@@ -124,6 +151,36 @@ input.addEventListener('change',function(){
         lreact.style.color="#b8c1ec";
         lsql.style.color="#b8c1ec";
         lboot.style.color="#b8c1ec";
+        //projects
+        ph1.style.color="#232946";
+
+        pBox1.style.backgroundColor="#232946";
+        pBox2.style.backgroundColor="#232946";
+        pBox3.style.backgroundColor="#232946";
+        pBox4.style.backgroundColor="#232946";
+        pBox5.style.backgroundColor="#232946";
+        pBox6.style.backgroundColor="#232946";
+
+        pBox1.style.color="#b8c1ec";
+        pBox2.style.color="#b8c1ec";
+        pBox3.style.color="#b8c1ec";
+        pBox4.style.color="#b8c1ec";
+        pBox5.style.color="#b8c1ec";
+        pBox6.style.color="#b8c1ec";
+
+        pbutton1.style.backgroundColor="#b8c1ec";
+        pbutton2.style.backgroundColor="#b8c1ec";
+        pbutton3.style.backgroundColor="#b8c1ec";
+        pbutton4.style.backgroundColor="#b8c1ec";
+        pbutton5.style.backgroundColor="#b8c1ec";
+        pbutton6.style.backgroundColor="#b8c1ec";
+
+        pview1.style.color="#232946";
+        pview2.style.color="#232946";
+        pview3.style.color="#232946";
+        pview4.style.color="#232946";
+        pview5.style.color="#232946";
+        pview6.style.color="#232946";
     } 
     else {
         //container
@@ -183,6 +240,8 @@ input.addEventListener('change',function(){
         box7.style.backgroundColor="#b8c1ec";
         box7.style.boxShadow="0px 0px 20px #b8c1ec";
         // skills
+        sh1.style.color= "#b8c1ec";
+
         html.style.color="#232946";
         css.style.color="#232946";
         js.style.color="#232946";
@@ -197,15 +256,50 @@ input.addEventListener('change',function(){
         lreact.style.color="#232946";
         lsql.style.color="#232946";
         lboot.style.color="#232946";
+        //projects
+        ph1.style.color="#b8c1ec";
+
+        pBox1.style.backgroundColor="#b8c1ec";
+        pBox2.style.backgroundColor="#b8c1ec";
+        pBox3.style.backgroundColor="#b8c1ec";
+        pBox4.style.backgroundColor="#b8c1ec";
+        pBox5.style.backgroundColor="#b8c1ec";
+        pBox6.style.backgroundColor="#b8c1ec";
+
+        pBox1.style.color="#232946";
+        pBox2.style.color="#232946";
+        pBox3.style.color="#232946";
+        pBox4.style.color="#232946";
+        pBox5.style.color="#232946";
+        pBox6.style.color="#232946";
+
+        pbutton1.style.backgroundColor="#232946"
+        pbutton2.style.backgroundColor="#232946"
+        pbutton3.style.backgroundColor="#232946"
+        pbutton4.style.backgroundColor="#232946"
+        pbutton5.style.backgroundColor="#232946"
+        pbutton6.style.backgroundColor="#232946"
+        
+        pview1.style.color="#b8c1ec";
+        pview2.style.color="#b8c1ec";
+        pview3.style.color="#b8c1ec";
+        pview4.style.color="#b8c1ec";
+        pview5.style.color="#b8c1ec";
+        pview6.style.color="#b8c1ec";
     }
 });
+}
+handelModes();
 // link open
-links1.addEventListener('click', function () {
-    window.open("https://github.com/Bharadwaja-sahoo","_self");
-});
-links2.addEventListener('click', function() {
-    window.open("./assets/BHARADWAJA's Resume (1).pdf","_self");
-});
+function handelLinks(){
+    links1.addEventListener('click', function () {
+        window.open("https://github.com/Bharadwaja-sahoo","_self");
+    });
+    links2.addEventListener('click', function() {
+        window.open("./assets/BHARADWAJA's Resume (1).pdf","_self");
+    });
+}
+handelLinks();
 //cursor
 function cursor(){
     let dot=document.querySelector("#cursor")
@@ -334,6 +428,22 @@ skillTl.from(".tech",{
     y:-50,
     opacity:0,
 });
+// projects
+var projectTl=gsap.timeline({
+    scrollTrigger:{
+        trigger:"#projects",
+        start:"0% 50%",
+        end:"10% 50%",
+        // markers:true,
+        scrub:true,
+    }
+});
+projectTl.from("#project-container",{
+    y:-50,
+    opacity:0,
+});
+
+
 //type-write
 var typed = new Typed('#bold', {
     strings: ['Front-End Developer', 'WebSite Developer','Full-Stack-Java Developer' , 'Mechanical Engineer'],
@@ -341,4 +451,4 @@ var typed = new Typed('#bold', {
     backSpeed: 100,
     backDelay: 1000,
     loop:true
-  });
+});

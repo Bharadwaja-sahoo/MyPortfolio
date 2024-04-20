@@ -34,6 +34,17 @@
     margin-top: 1vw;
     border-radius: 100px;
     box-shadow: 0px 0px 20px #b8c1ec;
+    animation: navBarAni 1s ease forwards;
+}
+@keyframes navBarAni{
+    from{
+        opacity: 0;
+        transform: translate(0px,-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
 }
 #logo{
     width: 15%;
@@ -91,7 +102,7 @@
 }
 @keyframes menuBar{
     0%{
-        transform: translate(-20vw,0);
+        transform: translate(-100vw,0);
     }
     100%{
         transform: translate(0,0);
@@ -150,9 +161,21 @@
 }
 .home-div1 h1{
     font-size: 3vw;
+    animation: homeh1 1s ease forwards;
+}
+@keyframes homeh1{
+    from{
+        opacity: 0;
+        transform: translate(-100px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
 }
 .home-div1 p{
     font-size: 1vw;
+    animation: homeh1 1s ease forwards;
 }
 #bold{
     font-weight: bold;
@@ -164,6 +187,17 @@
     align-items: center;
     justify-content: flex-start;
     gap: 5vw;
+    animation: cvAni 1s ease forwards;
+}
+@keyframes cvAni{
+    from{
+        opacity: 0;
+        transform: translate(100px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
 }
 #social-media{
     width: 100%;
@@ -172,7 +206,18 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 5%;   
+    gap: 5%;
+    animation: socialAni 1s ease forwards;   
+}
+@keyframes socialAni{
+    from{
+        opacity: 0;
+        transform: translate(0px,100px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
 }
 #fbook,#igram,#ldin{
     color: #b8c1ec;
@@ -250,6 +295,17 @@
     display: flex;
     flex-wrap: wrap;
     z-index: 1;
+    animation: imgani 1s ease forwards;
+}
+@keyframes imgani{
+    from{
+        opacity: 0;
+        transform: translate(100px,0px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0px,0px);
+    }
 }
 #imgdiv img{
     width: 100%;
@@ -345,6 +401,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+}
+#skills h1{
+    position: absolute;
+    top: -3%;
+    color: #b8c1ec;
+    text-decoration: underline;
+    text-transform: uppercase;
 }
 .tech{
     width: 100%;
@@ -355,8 +419,8 @@
     flex-wrap: wrap;
 }
 .tech-box{
-    width: 20%;
-    height: 45%;
+    width: 15%;
+    height: 35%;
     background-color: #b8c1ec;
     display: flex;
     justify-content: center;
@@ -385,10 +449,77 @@
 .progress-text i,h1{
     font-size: 2vw;
 }
-/* #projects{
+#projects{
     width: 100%;
-    height: 100vh;
-} */
+    height: 120vh;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+}
+#projects h1{
+    margin-top: 1%;
+    color: #b8c1ec;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+#project-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.projectCard{
+    width: 30%;
+    height: 45%;
+    background-color: #b8c1ec;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    z-index: 1;
+    color: #232946;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.projectCard img{
+    width: 100%;
+    padding: 3%;
+    border-radius: 20px 20px 0px 0px;
+}
+.projectCard a{
+    width: 35%;
+    height: 10%;
+    margin-bottom: 3%;
+    cursor: pointer;
+    background-color: #232946;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 0px #1d2139;
+    transition: all 0.2s;
+}
+.projectCard a:active{
+    box-shadow: 0px 0px 0px #000;
+    transform: translate(5px,5px);
+}
+.projectCard a{
+    text-decoration: none;
+}
+.projectCard a button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.1vw;
+    font-weight: 600;
+    color: #b8c1ec;
+}
 /* #contacts{
     width: 100%;
     height: 100vh;
@@ -688,7 +819,7 @@ footer{
   --percentage: var(--value);
   --primary: #369;
   --secondary: #adf;
-  --size: 10vw;
+  --size: 5vw;
   animation: progress 2s 0.5s forwards;
   width: var(--size);
   aspect-ratio: 1;
