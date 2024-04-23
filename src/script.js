@@ -8,6 +8,7 @@ var navbar=document.getElementById("navbar");
 var navhome=document.getElementById("nav-home");
 var navabout=document.getElementById("nav-about");
 var navskills=document.getElementById("nav-skills");
+var navprojects=document.getElementById("nav-projects");
 var navcontacts=document.getElementById("nav-contacts")
 //menu
 var menulogo=document.getElementById("menu");
@@ -84,6 +85,7 @@ input.addEventListener('change',function(){
         navhome.style.color="#b8c1ec";
         navabout.style.color="#b8c1ec";
         navskills.style.color="#b8c1ec";
+        navprojects.style.color="#b8c1ec";
         navcontacts.style.color="#b8c1ec";
         //nav-bar
         navbar.style.backgroundColor="#232946";
@@ -189,6 +191,7 @@ input.addEventListener('change',function(){
         navhome.style.color="#232946";
         navabout.style.color="#232946";
         navskills.style.color="#232946";
+        navprojects.style.color="#232946";
         navcontacts.style.color="#232946";
         //nav-bar
         navbar.style.backgroundColor="#b8c1ec";
@@ -386,63 +389,21 @@ showMessage.addEventListener('click',function(){
     imgBox.style.display="none";
 })
 
-// about gsap
-var aboutTl = gsap.timeline({
-    scrollTrigger:{
-        trigger:"#about",
-        start:"0% 50%",
-        end:"10% 50%",
-        // markers:true,
-        scrub:true,
-    },
-});
-aboutTl
-.from("#about-img",{
-    x:-50,
-    opacity:0,
-},"a")
-.from("#about-div2",{
-    x:50,
-    opacity:0,
-},"a")
-.from("#chakri2",{
-    x:-50,
-    opacity:0,
-},"a")
-.from("#chakri3",{
-    x:50,
-    opacity:0,
-},"a")
-
-// skills
-var skillTl=gsap.timeline({
-    scrollTrigger:{
-        trigger:"#skills",
-        start:"0% 50%",
-        end:"10% 50%",
-        // markers:true,
-        scrub:true,
-    }
-});
-skillTl.from(".tech",{
-    y:-50,
-    opacity:0,
-});
-// projects
-var projectTl=gsap.timeline({
-    scrollTrigger:{
-        trigger:"#projects",
-        start:"0% 50%",
-        end:"10% 50%",
-        // markers:true,
-        scrub:true,
-    }
-});
-projectTl.from(".wrapper",{
-    y:-50,
-    opacity:0,
-});
-
+//scroll-reveal
+const sr=ScrollReveal({
+    origin:'top',
+    distance:'60px',
+    duration:2500,
+    delay:300,
+    reset:true,
+})
+sr.reveal('#about','#skills','#projects')
+sr.reveal('#about-img',{origin:'left'})
+sr.reveal('#about-div2',{origin:'right'})
+sr.reveal('.tech',{interval:100})
+sr.reveal('#projects',{interval:100})
+sr.reveal('#chakri2',{origin:'left'})
+sr.reveal('#chakri3',{origin:'right'})
 
 //type-write
 var typed = new Typed('#bold', {
@@ -452,6 +413,8 @@ var typed = new Typed('#bold', {
     backDelay: 1000,
     loop:true
 });
+
+//project
 function projects(){
     const wrapper = document.querySelector(".wrapper");
     const carousel = document.querySelector(".carousel");

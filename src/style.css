@@ -299,12 +299,10 @@
 }
 @keyframes imgani{
     from{
-        opacity: 0;
-        transform: translate(100px,0px);
+        scale: 0.5;
     }
     to{
-        opacity: 1;
-        transform: translate(0px,0px);
+        scale: 1;
     }
 }
 #imgdiv img{
@@ -322,7 +320,7 @@
 }
 #about{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
