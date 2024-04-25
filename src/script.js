@@ -376,18 +376,18 @@ function menuBarClose(){
 }
 
 //mobile message
-// var showImg=document.getElementById("showImg");
-// var showMessage=document.getElementById("showMessage");
-// var messageBox=document.getElementById("MBox");
-// var imgBox=document.getElementById("simg");
-// showImg.addEventListener('click', function () {
-//     messageBox.style.display="none";
-//     imgBox.style.display="flex";
-// })
-// showMessage.addEventListener('click',function(){
-//     messageBox.style.display="flex";
-//     imgBox.style.display="none";
-// })
+var showImg=document.getElementById("showImg");
+var showMessage=document.getElementById("showMessage");
+var messageBox=document.getElementById("MBox");
+var imgBox=document.getElementById("simg");
+showImg.addEventListener('click', function () {
+    messageBox.style.display="none";
+    imgBox.style.display="flex";
+})
+showMessage.addEventListener('click',function(){
+    messageBox.style.display="flex";
+    imgBox.style.display="none";
+})
 
 //scroll-reveal
 const sr=ScrollReveal({
