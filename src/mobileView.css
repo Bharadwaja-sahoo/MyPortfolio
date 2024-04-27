@@ -650,6 +650,7 @@
         top:85%;
         right:10%;
         z-index: 0;
+        opacity: 0;
     }
     #chakri3{
         width: 10vw;
@@ -657,6 +658,7 @@
         top:45%;
         right:10%;
         z-index: 0;
+        opacity: 0;
     }
     .links{
         width: 25vw;
@@ -691,8 +693,8 @@
         justify-content: center;
     }
     #imgdiv{
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
         display: flex;
         flex-wrap: wrap;
         z-index: 1;
@@ -742,7 +744,7 @@
         justify-content: center;
         text-align: start;
         flex-direction: column;
-        gap: 5%;
+        gap: 1%;
         font-size: 18px;
         font-weight: 600;
         opacity: 1;
@@ -794,8 +796,9 @@
         position: relative;
     }
     #skills h1{
+        font-size: 18px ;
         position: absolute;
-        top: -3%;
+        top: -1%;
         color: #b8c1ec;
         text-decoration: underline;
         text-transform: uppercase;

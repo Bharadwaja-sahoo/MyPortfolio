@@ -389,9 +389,6 @@ sr.reveal('#about-img',{origin:'left'})
 sr.reveal('#about-div2',{origin:'right'})
 sr.reveal('.tech',{interval:100})
 sr.reveal('#projects',{interval:100})
-sr.reveal('#chakri2',{origin:'left'})
-sr.reveal('#chakri3',{origin:'right'})
-
 //type-write
 var typed = new Typed('#bold', {
     strings: ['Front-End Developer', 'WebSite Developer','Full-Stack-Java Developer' , 'Mechanical Engineer'],
