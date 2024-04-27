@@ -263,6 +263,20 @@
     .progress-text i,h2{
         font-size: 2vw;
     }
+    [role="progressbar"] {
+        --percentage: var(--value);
+        --primary: #369;
+        --secondary: #adf;
+        --size: 55px;
+        animation: progress 2s 0.5s forwards;
+        width: var(--size);
+        aspect-ratio: 1;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+      }
     #projects{
         width: 100%;
         z-index: 1;
