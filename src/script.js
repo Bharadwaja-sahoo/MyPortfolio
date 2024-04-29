@@ -35,6 +35,7 @@ var react=document.getElementById("react");
 var mongo=document.getElementById("mongoDb");
 var sql=document.getElementById("sql");
 var boots=document.getElementById("boots");
+var java=document.getElementById("java")
 //tech-box
 var box1=document.getElementById("htmlbox");
 var box2=document.getElementById("cssbox");
@@ -43,6 +44,7 @@ var box4=document.getElementById("reactbox");
 var box5=document.getElementById("mongobox");
 var box6=document.getElementById("sql-box");
 var box7=document.getElementById("bootbox");
+var box8=document.getElementById("javabox")
 //skills-logo
 var lhtml=document.getElementById("html-logo");
 var lcss=document.getElementById("css-logo");
@@ -136,6 +138,9 @@ input.addEventListener('change',function(){
 
         box7.style.backgroundColor="#232946";
         box7.style.boxShadow="0px 0px 20px #232946";
+
+        box8.style.backgroundColor="#232946";
+        box8.style.boxShadow="0px 0px 20px #232946";
         // skills
         sh1.style.color= "#232946";
 
@@ -146,6 +151,7 @@ input.addEventListener('change',function(){
         mongo.style.color="#b8c1ec";
         sql.style.color="#b8c1ec";
         boots.style.color="#b8c1ec";
+        java.style.color="#b8c1ec";
         //skills-logo
         lhtml.style.color="#b8c1ec";
         lcss.style.color="#b8c1ec";
@@ -242,6 +248,9 @@ input.addEventListener('change',function(){
 
         box7.style.backgroundColor="#b8c1ec";
         box7.style.boxShadow="0px 0px 20px #b8c1ec";
+
+        box8.style.backgroundColor="#b8c1ec";
+        box8.style.boxShadow="0px 0px 20px #b8c1ec";
         // skills
         sh1.style.color= "#b8c1ec";
 
@@ -252,6 +261,7 @@ input.addEventListener('change',function(){
         mongo.style.color="#232946";
         sql.style.color="#232946";
         boots.style.color="#232946";
+        java.style.color="#232946";
         //skills-logo
         lhtml.style.color="#232946";
         lcss.style.color="#232946";

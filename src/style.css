@@ -617,10 +617,9 @@ footer{
 }
 .footbox h2{
     position: absolute;
-    top: 5%;
+    top: 2%;
     color: #b8c1ec;
     text-decoration: underline;
-    padding: 5px;
 }
 .footbox img{
     width: 10vw;
