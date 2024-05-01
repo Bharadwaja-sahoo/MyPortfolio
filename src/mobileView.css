@@ -785,7 +785,7 @@
         font-size: 6.5vw;
         font-weight: 600;
         opacity: .2;
-        left: 2%;
+        left: 5%;
         white-space: nowrap;
         width: 100%;
         color: #b8c1ec;
@@ -798,14 +798,14 @@
         font-size: 6.5vw;
         font-weight: 600;
         opacity: 1;
-        left: 2%;
+        left: 5%;
         white-space: nowrap;
         overflow: hidden;
         color: #b8c1ec;
     }
     #skills{
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -824,13 +824,14 @@
         height: 100%;
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content:space-evenly;
         flex-wrap: wrap;
-        gap:2%;
+        /* gap: 2%; */
+        padding: 5%;
     }
     .tech-box{
         width: 30%;
-        height: 25%;
+        height: 20%;
         background-color: #b8c1ec;
         display: flex;
         justify-content: center;
@@ -841,7 +842,7 @@
         transition: all 0.5s ease;
         z-index: 1;
         cursor: pointer;
-        margin-inline: 0%;
+        margin-bottom: 5%;
     }
     .tech-box:hover{
         transform: scale(1.05);
@@ -1013,7 +1014,7 @@
           align-items: center;
       }
       .footbox{
-          width: 30%;
+          width: 45%;
           height: 90%;
           display: flex;
           align-items: center;
@@ -1029,14 +1030,13 @@
           position: relative;
       }
       .footbox p{
-        font-size: 2vw;
+        font-size: 2.5vw;
       }
       .footbox h2{
           position: absolute;
           top: 1%;
           color: #b8c1ec;
           text-decoration: underline;
-          padding: 5px;
       }
       .footbox img{
           width: 15vw;
@@ -1049,6 +1049,9 @@
       .footbox div a{
           text-decoration: none;
           color: #b8c1ec;
+      }
+      .quicklink{
+        display: none;
       }
       #linkstore{
           width: 100%;
