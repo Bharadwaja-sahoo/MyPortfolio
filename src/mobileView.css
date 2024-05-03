@@ -488,6 +488,12 @@
           font-size: 2vw;
           font-weight: 600;
       }
+      #cursor{
+        opacity: 0;
+        }
+    #cursor-circle{
+        opacity: 0;
+    }
 }
 
 

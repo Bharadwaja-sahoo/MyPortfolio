@@ -78,11 +78,14 @@ var pview4=document.getElementById("pview4");
 var pview5=document.getElementById("pview5");
 var pview6=document.getElementById("pview6");
 
+var moon=document.getElementById("moon")
+var sun=document.getElementById("sun")
+
 
 input.addEventListener('change',function(){
     if(this.checked) {
         //container
-        toggleColor.style.backgroundColor="#b8c1ec";
+        toggleColor.style.backgroundColor="#9baaf7";
         //nav-link
         navhome.style.color="#b8c1ec";
         navabout.style.color="#b8c1ec";
@@ -92,6 +95,9 @@ input.addEventListener('change',function(){
         //nav-bar
         navbar.style.backgroundColor="#232946";
         navbar.style.boxShadow="0px 0px 20px #232946";
+        //switch
+        sun.style.color="transparent";
+        moon.style.color="#f1c40f";
         //menu logo
         menulogo.style.color="#b8c1ec";
         //home
@@ -202,6 +208,9 @@ input.addEventListener('change',function(){
         //nav-bar
         navbar.style.backgroundColor="#b8c1ec";
         navbar.style.boxShadow="0px 0px 20px #b8c1ec";
+        //switch
+        sun.style.color="#f1c40f";
+        moon.style.color="transparent";
         //menu logo
         menulogo.style.color="#232946";
         //home
