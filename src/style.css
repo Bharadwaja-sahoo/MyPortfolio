@@ -355,9 +355,9 @@
     font-weight: 600;
     opacity: 1;
 }
-#about-div2 h1{
+/* #about-div2 h1{
     text-decoration: underline;
-}
+} */
 #about-div2 p{
     width: 80%;
 }
@@ -626,8 +626,6 @@ section{
 #projects h1{
     margin-top: 1%;
     color: #b8c1ec;
-    text-decoration: underline;
-    text-transform: uppercase;
 }
 .wrapper {
     max-width: 1100px;
