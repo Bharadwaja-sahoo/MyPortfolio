@@ -113,67 +113,118 @@
                 </p>
             </div>
         </div>
-
-        <div id="skills">
-            <h1 id="sh1">Skill's</h1>
-            <div class="tech">
-                <div id="htmlbox" class="tech-box" >
-                    <div role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="--value: 90"></div>
-                    <div class="progress-text">
-                        <i id="html-logo" class="fa-brands fa-html5"></i>
-                        <h2 id="html">HTML</h2>
+        <section id="skillSection">
+            <div class="skill1" id="skills">
+                
+                <h1 id="sh1" class="heading1">Technical Skills</h1>
+    
+                <div class="Technical-bars">
+                    <div id="htmlbox" class="bar"><i class="fa-brands fa-html5"></i>
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progress-line html">
+                            <span id="html"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="cssbox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--value: 80"></div>
-                    <div class="progress-text">
-                        <i id="css-logo" class="fa-brands fa-css3-alt"></i>
-                        <h2 id="css">CSS</h2>
+                    <div id="cssbox" class="bar"><i class="fa-brands fa-css3-alt"></i>
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progress-line css">
+                            <span id="css"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="jsbox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
-                    <div class="progress-text">
-                        <i id="js-logo" class="fa-brands fa-js"></i>
-                        <h2 id="js">JScript</h2>
+                    <div id="jsbox" class="bar"><i class="fa-brands fa-js"></i>
+                        <div class="info">
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="progress-line javaScript">
+                            <span id="js"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="reactbox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="--value: 50"></div>
-                    <div class="progress-text">
-                        <i id="react-logo" class="fa-brands fa-react"></i>
-                        <h2 id="react">React Js</h2>
+                    <div id="javabox" class="bar"><i class="fa-brands fa-java"></i>
+                        <div class="info">
+                            <span>Java</span>
+                        </div>
+                        <div class="progress-line java">
+                            <span id="java"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="mongobox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="--value: 70"></div>
-                    <div class="progress-text">
-                        <h2 id="mongoDb">Mongo Db</h2>
+                    <div id="reactbox" class="bar"><i class="fa-brands fa-react"></i>
+                        <div class="info">
+                            <span>React</span>
+                        </div>
+                        <div class="progress-line react">
+                            <span id="react"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="sql-box" class="tech-box">
-                    <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
-                    <div class="progress-text">
-                        <i id="sql-logo" class="fa-solid fa-database"></i>
-                        <h2 id="sql">SQl</h2>
+                    <div id="bootbox" class="bar"><i class="fa-brands fa-bootstrap"></i>
+                        <div class="info">
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="progress-line boots">
+                            <span id="boots"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="bootbox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="--value: 80"></div>
-                    <div class="progress-text">
-                        <i id="boot-logo" class="fa-brands fa-bootstrap"></i>
-                        <h2 id="boots">Bootstrap</h2>
+                    <div id="mongobox" class="bar"><i class="fa-solid fa-server"></i>
+                        <div class="info">
+                            <span>Mongo DB</span>
+                        </div>
+                        <div class="progress-line mongo">
+                            <span id="mongoDb"></span>
+                        </div>
                     </div>
-                </div>
-                <div id="javabox" class="tech-box">
-                    <div role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="--value: 60"></div>
-                    <div class="progress-text">
-                        <i class="fa-brands fa-java"></i>
-                        <h2 id="java">Java</h2>
+                    <div id="sql-box" class="bar"><i class="fa-solid fa-database"></i>
+                        <div class="info">
+                            <span>SQL</span>
+                        </div>
+                        <div class="progress-line sql">
+                            <span id="sql"></span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+    
+            <div class="skill2">
+                <h1 id="sh2" class="heading1">Professional Skills</h1>
+    
+                <div id="roundtext" class="radial-bars">
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle id="path1" class="path path-1" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">90%</div>
+                        <div class="text">Creativity</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle id="path2" class="path path-2" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">80%</div>
+                        <div class="text">Communication</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle id="path3" class="path path-3" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">75%</div>
+                        <div class="text">Problem Solving</div>
+                    </div>
+                    <div class="radial-bar">
+                        <svg x="0px" y="0px" viewBox="0 0 200 200">
+                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                            <circle id="path4" class="path path-4" cx="100" cy="100" r="80"></circle>
+                        </svg>
+                        <div class="percentage">85%</div>
+                        <div class="text">TeamWork</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <div id="projects">
             <h1 id="ph1">Project's</h1>
             <div class="wrapper">

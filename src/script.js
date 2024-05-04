@@ -27,6 +27,7 @@ var aboutimg=document.getElementById("about-img");
 var aboutText=document.getElementById("about-div2");
 // skills
 var sh1=document.getElementById("sh1");
+var sh2=document.getElementById("sh2");
 
 var html=document.getElementById("html");
 var css=document.getElementById("css");
@@ -36,7 +37,14 @@ var mongo=document.getElementById("mongoDb");
 var sql=document.getElementById("sql");
 var boots=document.getElementById("boots");
 var java=document.getElementById("java")
-//tech-box
+
+var professiontext=document.getElementById("roundtext");
+var path1=document.getElementById("path1");
+var path2=document.getElementById("path2");
+var path3=document.getElementById("path3");
+var path4=document.getElementById("path4");
+
+//skills
 var box1=document.getElementById("htmlbox");
 var box2=document.getElementById("cssbox");
 var box3=document.getElementById("jsbox");
@@ -45,13 +53,6 @@ var box5=document.getElementById("mongobox");
 var box6=document.getElementById("sql-box");
 var box7=document.getElementById("bootbox");
 var box8=document.getElementById("javabox")
-//skills-logo
-var lhtml=document.getElementById("html-logo");
-var lcss=document.getElementById("css-logo");
-var ljs=document.getElementById("js-logo");
-var lreact=document.getElementById("react-logo");
-var lsql=document.getElementById("sql-logo");
-var lboot=document.getElementById("boot-logo");
 //links
 var fbook=document.getElementById("fbook");
 var igram=document.getElementById("igram");
@@ -124,47 +125,41 @@ input.addEventListener('change',function(){
         igram.style.color="#232946";
         ldin.style.color="#232946";
         //tech-box
-        box1.style.backgroundColor="#232946";
-        box1.style.boxShadow="0px 0px 20px #232946";
+        box1.style.backgroundColor="#23294699";
+        box2.style.backgroundColor="#23294699";
+        box3.style.backgroundColor="#23294699";
+        box4.style.backgroundColor="#23294699";
+        box5.style.backgroundColor="#23294699";
+        box6.style.backgroundColor="#23294699";
+        box7.style.backgroundColor="#23294699";
+        box8.style.backgroundColor="#23294699";
 
-        box2.style.backgroundColor="#232946";
-        box2.style.boxShadow="0px 0px 20px #232946";
-
-        box3.style.backgroundColor="#232946";
-        box3.style.boxShadow="0px 0px 20px #232946";
-
-        box4.style.backgroundColor="#232946";
-        box4.style.boxShadow="0px 0px 20px #232946";
-
-        box5.style.backgroundColor="#232946";
-        box5.style.boxShadow="0px 0px 20px #232946";
-
-        box6.style.backgroundColor="#232946";
-        box6.style.boxShadow="0px 0px 20px #232946";
-
-        box7.style.backgroundColor="#232946";
-        box7.style.boxShadow="0px 0px 20px #232946";
-
-        box8.style.backgroundColor="#232946";
-        box8.style.boxShadow="0px 0px 20px #232946";
+        box1.style.color="#b8c1ec";
+        box2.style.color="#b8c1ec";
+        box3.style.color="#b8c1ec";
+        box4.style.color="#b8c1ec";
+        box5.style.color="#b8c1ec";
+        box6.style.color="#b8c1ec";
+        box7.style.color="#b8c1ec";
+        box8.style.color="#b8c1ec";
         // skills
-        sh1.style.color= "#232946";
+        sh1.style.color="#232946";
+        sh2.style.color="#232946";
 
-        html.style.color="#b8c1ec";
-        css.style.color="#b8c1ec";
-        js.style.color="#b8c1ec";
-        react.style.color="#b8c1ec";
-        mongo.style.color="#b8c1ec";
-        sql.style.color="#b8c1ec";
-        boots.style.color="#b8c1ec";
-        java.style.color="#b8c1ec";
-        //skills-logo
-        lhtml.style.color="#b8c1ec";
-        lcss.style.color="#b8c1ec";
-        ljs.style.color="#b8c1ec";
-        lreact.style.color="#b8c1ec";
-        lsql.style.color="#b8c1ec";
-        lboot.style.color="#b8c1ec";
+        html.style.backgroundColor="#6A6D78";
+        css.style.backgroundColor="#6A6D78";
+        js.style.backgroundColor="#6A6D78";
+        react.style.backgroundColor="#6A6D78";
+        mongo.style.backgroundColor="#6A6D78";
+        sql.style.backgroundColor="#6A6D78";
+        boots.style.backgroundColor="#6A6D78";
+        java.style.backgroundColor="#6A6D78";
+
+        professiontext.style.color="#232946";
+        path1.style.stroke="#6A6D78";
+        path2.style.stroke="#6A6D78";
+        path3.style.stroke="#6A6D78";
+        path4.style.stroke="#6A6D78";
         //projects
         ph1.style.color="#232946";
 
@@ -237,47 +232,41 @@ input.addEventListener('change',function(){
         igram.style.color="#b8c1ec";
         ldin.style.color="#b8c1ec";
         //tech-box
-        box1.style.backgroundColor="#b8c1ec";
-        box1.style.boxShadow="0px 0px 20px #b8c1ec";
+        box1.style.backgroundColor="#b8c1ec6a";
+        box2.style.backgroundColor="#b8c1ec6a";
+        box3.style.backgroundColor="#b8c1ec6a";
+        box4.style.backgroundColor="#b8c1ec6a";
+        box5.style.backgroundColor="#b8c1ec6a";
+        box6.style.backgroundColor="#b8c1ec6a";
+        box7.style.backgroundColor="#b8c1ec6a";
+        box8.style.backgroundColor="#b8c1ec6a";
 
-        box2.style.backgroundColor="#b8c1ec";
-        box2.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box3.style.backgroundColor="#b8c1ec";
-        box3.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box4.style.backgroundColor="#b8c1ec";
-        box4.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box5.style.backgroundColor="#b8c1ec";
-        box5.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box6.style.backgroundColor="#b8c1ec";
-        box6.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box7.style.backgroundColor="#b8c1ec";
-        box7.style.boxShadow="0px 0px 20px #b8c1ec";
-
-        box8.style.backgroundColor="#b8c1ec";
-        box8.style.boxShadow="0px 0px 20px #b8c1ec";
+        box1.style.color="#232946";
+        box2.style.color="#232946";
+        box3.style.color="#232946";
+        box4.style.color="#232946";
+        box5.style.color="#232946";
+        box6.style.color="#232946";
+        box7.style.color="#232946";
+        box8.style.color="#232946";
         // skills
-        sh1.style.color= "#b8c1ec";
+        sh1.style.color="#b8c1ec";
+        sh2.style.color="#b8c1ec";
 
-        html.style.color="#232946";
-        css.style.color="#232946";
-        js.style.color="#232946";
-        react.style.color="#232946";
-        mongo.style.color="#232946";
-        sql.style.color="#232946";
-        boots.style.color="#232946";
-        java.style.color="#232946";
-        //skills-logo
-        lhtml.style.color="#232946";
-        lcss.style.color="#232946";
-        ljs.style.color="#232946";
-        lreact.style.color="#232946";
-        lsql.style.color="#232946";
-        lboot.style.color="#232946";
+        html.style.backgroundColor="#b8c1ec";
+        css.style.backgroundColor="#b8c1ec";
+        js.style.backgroundColor="#b8c1ec";
+        react.style.backgroundColor="#b8c1ec";
+        mongo.style.backgroundColor="#b8c1ec";
+        sql.style.backgroundColor="#b8c1ec";
+        boots.style.backgroundColor="#b8c1ec";
+        java.style.backgroundColor="#b8c1ec";
+
+        professiontext.style.color="#b8c1ec";
+        path1.style.stroke="#b8c1ec"
+        path2.style.stroke="#b8c1ec";
+        path3.style.stroke="#b8c1ec";
+        path4.style.stroke="#b8c1ec";
         //projects
         ph1.style.color="#b8c1ec";
 
@@ -403,10 +392,11 @@ const sr=ScrollReveal({
     delay:300,
     reset:true,
 })
-sr.reveal('#about','#skills','#projects')
+sr.reveal('#about','#skillSection','#projects')
 sr.reveal('#about-img',{origin:'left'})
 sr.reveal('#about-div2',{origin:'right'})
-sr.reveal('.tech',{interval:100})
+sr.reveal('.Technical-bars',{origin:'left'})
+sr.reveal('.radial-bars',{origin:'right'})
 sr.reveal('#projects',{interval:100})
 //type-write
 var typed = new Typed('#bold', {

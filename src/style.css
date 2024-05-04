@@ -393,59 +393,225 @@
     overflow: hidden;
     color: #b8c1ec;
 }
-#skills{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-}
-#skills h1{
-    position: absolute;
-    top: -3%;
-    color: #b8c1ec;
-    text-decoration: underline;
-    text-transform: uppercase;
-}
-.tech{
+section{
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
-    justify-content:center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
-.tech-box{
-    width: 15%;
-    height: 35%;
-    background-color: #b8c1ec;
+.skill1{
+    width: 50%;
+    height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: start;
     flex-direction: column;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #b8c1ec;
-    transition: all 0.5s ease;
-    z-index: 1;
-    cursor: pointer;
-    margin-inline: 2%;
 }
-.tech-box:hover{
-    transform: scale(1.05);
-}
-.progress-text{
-    width: 12vw;
-    height: 10vh;
-    margin-top: 5vh;
+.skill2{
+    width: 50%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 5%;
-    color: #232946;
+    justify-content: start;
+    flex-direction: column;
 }
-.progress-text i,h2{
-    font-size: 2vw;
+.heading1{
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #b8c1ec;
+}
+.Technical-bars{
+    width:70%;
+    height: 80%;
+}
+.bar{
+    width: 100%;
+    height: 15%;
+    font-size: 23px;
+    margin-top: 5%;
+    color: #232946;
+    background-color: #b8c1ec6a;
+    padding: 5%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+.Technical-bars .bar{
+    margin-top: 40px 0;
+}
+.Technical-bars .bar:first-child{
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child{
+    margin-bottom: 0;
+}
+.Technical-bars .bar .info{
+    margin-bottom: 5px;
+}
+.Technical-bars .bar .info span{
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 1;
+}
+.Technical-bars .bar .progress-line{
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: #000000;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+.Technical-bars .bar .progress-line span{
+    height: 100%;
+    background-color: #b8c1ec;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.html span{
+    width: 95%;
+}
+.css span{
+    width: 90%;
+}
+.javaScript span{
+    width: 70%;
+}
+.java span{
+    width: 65%;
+}
+.react span{
+    width: 80%;
+}
+.boots span{
+    width: 90%;
+}.progress-line.sql span{
+    width: 70%;
+}.progress-line.mongo span{
+    width: 80%;
+}
+.progress-line span::after{
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #000;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    opacity: 1;
+}
+.html span::after{
+    content: "95%";
+}
+.css span::after{
+    content: "90%";
+}
+.javaScript span::after{
+    content: "70%";
+}
+.java span::after{
+    content: "65%";
+}
+.react span::after{
+    content: "80%";
+}
+.boots span::after{
+    content: "90%";
+}
+.mongo span::after{
+    content: "80%";
+}
+.sql span::after{
+    content: "70%";
+}
+.progress-line span::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    top: -10px;
+    right: 0;
+    opacity: 1;
+}
+.radial-bars{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    color: #b8c1ec;
+}
+.radial-bar{
+    width: 50%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;  
+}
+.radial-bars .radial-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar{
+    stroke-width: 10;
+    stroke: black;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: -1;
+    stroke-linecap: round;
+}
+.path{
+    stroke-width: 10;
+    stroke: #b8c1ec;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+} 
+.path-1{
+    stroke-dashoffset: 50;
+}
+.path-2{
+    stroke-dashoffset: 175;
+}
+.path-3{
+    stroke-dashoffset: 125;
+}
+.path-4{
+    stroke-dashoffset: 75;
+}    
+.radial-bar .percentage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 1;
+}
+.radial-bar .text{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 15%;
+    bottom: -5px;
+    transform: translateX(-50px);
+    font-size: 17px;
+    font-weight: 500;
+    opacity: 1;
 }
 #projects{
     width: 100%;
