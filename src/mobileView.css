@@ -198,7 +198,7 @@
         justify-content: center;
         text-align: start;
         flex-direction: column;
-        gap: 5%;
+        gap: auto;
         font-size: 2vw;
         font-weight: 600;
         opacity: 1;
@@ -695,7 +695,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        overflow: hidden;
         position: relative;
     }
     #about-div1{
@@ -722,12 +721,18 @@
         text-align: start;
         flex-direction: column;
         gap: auto;
-        font-size: 18px;
+        font-size: 2.5vw;
         font-weight: 600;
         opacity: 1;
+        padding: 5%;
     }
     #about-div2 h1{
-        text-decoration: underline;
+        text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #b8c1ec;
     }
     #about-div2 p{
         width: 80%;

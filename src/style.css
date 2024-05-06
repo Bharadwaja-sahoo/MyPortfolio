@@ -355,9 +355,14 @@
     font-weight: 600;
     opacity: 1;
 }
-/* #about-div2 h1{
+#about-div2 h1{
+    text-align: center;
     text-decoration: underline;
-} */
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #b8c1ec;
+}
 #about-div2 p{
     width: 80%;
 }
@@ -423,6 +428,7 @@ section{
     text-decoration-thickness: 5px;
     margin-bottom: 50px;
     color: #b8c1ec;
+    margin-top: 1%;
 }
 .Technical-bars{
     width:70%;
