@@ -9,6 +9,7 @@ var navhome=document.getElementById("nav-home");
 var navabout=document.getElementById("nav-about");
 var navskills=document.getElementById("nav-skills");
 var navprojects=document.getElementById("nav-projects");
+var navwork=document.getElementById("nav-work");
 var navcontacts=document.getElementById("nav-contacts")
 //menu
 var menulogo=document.getElementById("menu");
@@ -92,6 +93,7 @@ input.addEventListener('change',function(){
         navabout.style.color="#b8c1ec";
         navskills.style.color="#b8c1ec";
         navprojects.style.color="#b8c1ec";
+        navwork.style.color="#b8c1ec";
         navcontacts.style.color="#b8c1ec";
         //nav-bar
         navbar.style.backgroundColor="#232946";
@@ -199,6 +201,7 @@ input.addEventListener('change',function(){
         navabout.style.color="#232946";
         navskills.style.color="#232946";
         navprojects.style.color="#232946";
+        navwork.style.color="#232946";
         navcontacts.style.color="#232946";
         //nav-bar
         navbar.style.backgroundColor="#b8c1ec";

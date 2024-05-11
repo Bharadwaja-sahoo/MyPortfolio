@@ -904,9 +904,116 @@ footer{
   left: 2px;
   top: 2px;
   border-radius: 50%;
-  transition: transform 0.2s linear;
+  transition: all 0.2s linear;
 }
   
 .checkbox:checked + .checkbox-label .ball {
   transform: translateX(24px);
+}
+/* work */
+#workcontainer{
+    width: 100%;
+    height: 100%;
+    background-color: #9baaf7;
+}
+#workhead{
+    width: 100%;
+    height: 50px;
+    background-color: #232946;
+    color: #b8c1ec;
+    font-size: 2vw;
+    text-align: center;
+    box-shadow: 0px 20px 20px #232946;
+}
+#project-con{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    padding-top: 30px;
+}
+.box{
+    width: calc(33.33% - 10px);
+    height:50vh;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #232946;
+    color: #b8c1ec;
+    font-size: 1.5vw;
+}
+.box img{
+    width: 90%;
+    border: 2px solid #b8c1ec;
+    border-radius: 20px 20px 0px 0px;
+}
+.box a{
+    width: 20%;
+    height: 10%;
+}
+.box a button{
+    width: 100%;
+    height: 100%;
+    font-size: 1vw;
+    cursor: pointer;
+    color: #232946;
+    background-color: #b8c1ec;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px #121629;
+    transition: all 0.2s ease;
+}
+.box a button:active{
+    box-shadow: 0px 0px 0px #121629;
+    transform: translate(5px,5px);
+}
+#butoon-con{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+}
+#butoon-con button{
+    width: 10vw;
+    height: 5vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 0px black;
+    transition: all 0.2s ease;
+    color: #b8c1ec;
+    font-size: 1.5vw;
+    background-color: #232946;
+}
+#butoon-con button:active{
+    box-shadow: 0px 0px 0px black;
+    transform: translate(5px,5px);
+}
+#row1{
+    display: flex;
+}
+#row2{
+    display: none;
+}
+#row3{
+    display: none;
+}
+#row4{
+    display: none;
+}
+#row5{
+    display: none;
+}
+#row6{
+    display: none;
+}
+#row7{
+    display: none;
 }
