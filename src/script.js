@@ -66,6 +66,8 @@ var pBox4=document.getElementById("pbox4");
 var pBox5=document.getElementById("pbox5");
 var pBox6=document.getElementById("pbox6");
 
+var workbox=document.getElementById("workLink");
+
 var pbutton1=document.getElementById("pbutton1");
 var pbutton2=document.getElementById("pbutton2");
 var pbutton3=document.getElementById("pbutton3");
@@ -164,6 +166,8 @@ input.addEventListener('change',function(){
         path4.style.stroke="#6A6D78";
         //projects
         ph1.style.color="#232946";
+        workbox.style.backgroundColor="#232946";
+        workbox.style.color="#b8c1ec";
 
         pBox1.style.backgroundColor="#232946";
         pBox2.style.backgroundColor="#232946";
@@ -272,6 +276,8 @@ input.addEventListener('change',function(){
         path4.style.stroke="#b8c1ec";
         //projects
         ph1.style.color="#b8c1ec";
+        workbox.style.backgroundColor="#b8c1ec";
+        workbox.style.color="#232946";
 
         pBox1.style.backgroundColor="#b8c1ec";
         pBox2.style.backgroundColor="#b8c1ec";

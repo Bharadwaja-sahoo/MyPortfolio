@@ -633,9 +633,45 @@ section{
     margin-top: 1%;
     color: #b8c1ec;
 }
+#workLink{
+    width: 10vw;
+    height: 8vh;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 1.2vw;
+    font-weight: 600;
+    box-shadow: 5px 5px 0px #121629;
+    border: 1px solid #121629;
+    border-radius: 10px;
+    background-color: #b8c1ec;
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.2s ease;
+    animation: worklink 0.5s infinite linear;
+}
+@keyframes worklink{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+#workLink:active{
+    transform: translate(5px,5px);
+    box-shadow: 0px 0px 0px black;
+}
 .wrapper {
-    max-width: 1100px;
+    /* max-width: 1100px; */
     width: 100%;
+    height: 90%;
     position: relative;
   }
 .wrapper i {
@@ -730,8 +766,6 @@ section{
   border-radius: 20px 20px 0px 0px;
 }
 .card a{
-  width: 35%;
-  height: 10%;
   margin-bottom: 3%;
   cursor: pointer;
   background-color: #232946;
@@ -742,15 +776,16 @@ section{
   justify-content: center;
   box-shadow: 5px 5px 0px #1d2139;
   transition: all 0.2s;
+  text-decoration: none;
+  width: 20%;
 }
 .card a:active{
   box-shadow: 0px 0px 0px #000;
   transform: translate(5px,5px);
 }
-.card a{
-  text-decoration: none;
-}
 .card a button{
+    width: 100%;
+    height: 100%;
   background-color: transparent;
   border: none;
   outline: none;
