@@ -974,7 +974,7 @@ footer{
 }
 .box{
     width: calc(33.33% - 10px);
-    height:50vh;
+    height:55vh;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -983,27 +983,64 @@ footer{
     background-color: #232946;
     color: #b8c1ec;
     font-size: 1.5vw;
+    overflow: hidden;
+    border: 2px solid #1d2139;
 }
-.box img{
-    width: 90%;
-    border: 2px solid #b8c1ec;
-    border-radius: 20px 20px 0px 0px;
+#worktopdiv{
+    width: 100%;
+    height: 60%;
+    border-bottom: 2px solid #b8c1ec;
 }
-.box a{
-    width: 20%;
-    height: 10%;
-}
-.box a button{
+#worktopdiv img{
     width: 100%;
     height: 100%;
-    font-size: 1vw;
+}
+#workbotdiv{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#workbotdiv a{
+    width: 25%;
+    height: 28%;
+}
+#workbotdiv a button{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vw;
     cursor: pointer;
     color: #232946;
     background-color: #b8c1ec;
-    border: 2px solid black;
+    border: none;
+    outline: none;
     border-radius: 10px;
     box-shadow: 5px 5px 0px #121629;
     transition: all 0.2s ease;
+}
+.buttonHover span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.buttonHover span:after{
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.buttonHover:hover span{
+    padding-right: 25px;
+}
+.buttonHover:hover span:after{
+    color: #232946;
+    opacity: 1;
+    right: 0;
 }
 .box a button:active{
     box-shadow: 0px 0px 0px #121629;
