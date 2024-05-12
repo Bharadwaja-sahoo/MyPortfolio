@@ -487,11 +487,6 @@
         color: #b8c1ec;
         font-size: 1.5vw;
     }
-    .box img{
-        width: 90%;
-        border: 2px solid #b8c1ec;
-        border-radius: 20px 20px 0px 0px;
-    }
     .box a{
         width: 20%;
         height: 10%;
@@ -1064,8 +1059,8 @@
           justify-content: space-evenly;
       }
       .footlink{
-          width: 3vw;
-          height: 6vh;
+          width: 6vw;
+          height: 5vh;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1152,11 +1147,6 @@
         background-color: #232946;
         color: #b8c1ec;
         font-size: 2.5vw;
-    }
-    .box img{
-        width: 90%;
-        border: 2px solid #b8c1ec;
-        border-radius: 20px 20px 0px 0px;
     }
     .box a{
         width: 30%;
