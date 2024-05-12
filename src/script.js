@@ -65,6 +65,7 @@ var pBox3=document.getElementById("pbox3");
 var pBox4=document.getElementById("pbox4");
 var pBox5=document.getElementById("pbox5");
 var pBox6=document.getElementById("pbox6");
+var pBox7=document.getElementById("pbox7");
 
 var workbox=document.getElementById("workLink");
 
@@ -74,6 +75,7 @@ var pbutton3=document.getElementById("pbutton3");
 var pbutton4=document.getElementById("pbutton4");
 var pbutton5=document.getElementById("pbutton5");
 var pbutton6=document.getElementById("pbutton6");
+var pbutton7=document.getElementById("pbutton7");
 
 var pview1=document.getElementById("pview1");
 var pview2=document.getElementById("pview2");
@@ -81,6 +83,7 @@ var pview3=document.getElementById("pview3");
 var pview4=document.getElementById("pview4");
 var pview5=document.getElementById("pview5");
 var pview6=document.getElementById("pview6");
+var pview7=document.getElementById("pview7");
 
 var moon=document.getElementById("moon")
 var sun=document.getElementById("sun")
@@ -175,6 +178,7 @@ input.addEventListener('change',function(){
         pBox4.style.backgroundColor="#232946";
         pBox5.style.backgroundColor="#232946";
         pBox6.style.backgroundColor="#232946";
+        pBox7.style.backgroundColor="#232946";
 
         pBox1.style.color="#b8c1ec";
         pBox2.style.color="#b8c1ec";
@@ -182,6 +186,7 @@ input.addEventListener('change',function(){
         pBox4.style.color="#b8c1ec";
         pBox5.style.color="#b8c1ec";
         pBox6.style.color="#b8c1ec";
+        pBox7.style.color="#b8c1ec";
 
         pbutton1.style.backgroundColor="#b8c1ec";
         pbutton2.style.backgroundColor="#b8c1ec";
@@ -189,6 +194,7 @@ input.addEventListener('change',function(){
         pbutton4.style.backgroundColor="#b8c1ec";
         pbutton5.style.backgroundColor="#b8c1ec";
         pbutton6.style.backgroundColor="#b8c1ec";
+        pbutton7.style.backgroundColor="#b8c1ec";
 
         pview1.style.color="#232946";
         pview2.style.color="#232946";
@@ -196,6 +202,7 @@ input.addEventListener('change',function(){
         pview4.style.color="#232946";
         pview5.style.color="#232946";
         pview6.style.color="#232946";
+        pview7.style.color="#232946";
     } 
     else {
         //container
@@ -285,6 +292,7 @@ input.addEventListener('change',function(){
         pBox4.style.backgroundColor="#b8c1ec";
         pBox5.style.backgroundColor="#b8c1ec";
         pBox6.style.backgroundColor="#b8c1ec";
+        pBox7.style.backgroundColor="#b8c1ec";
 
         pBox1.style.color="#232946";
         pBox2.style.color="#232946";
@@ -292,6 +300,7 @@ input.addEventListener('change',function(){
         pBox4.style.color="#232946";
         pBox5.style.color="#232946";
         pBox6.style.color="#232946";
+        pBox7.style.color="#232946";
 
         pbutton1.style.backgroundColor="#232946"
         pbutton2.style.backgroundColor="#232946"
@@ -299,6 +308,7 @@ input.addEventListener('change',function(){
         pbutton4.style.backgroundColor="#232946"
         pbutton5.style.backgroundColor="#232946"
         pbutton6.style.backgroundColor="#232946"
+        pbutton7.style.backgroundColor="#232946"
         
         pview1.style.color="#b8c1ec";
         pview2.style.color="#b8c1ec";
@@ -306,6 +316,7 @@ input.addEventListener('change',function(){
         pview4.style.color="#b8c1ec";
         pview5.style.color="#b8c1ec";
         pview6.style.color="#b8c1ec";
+        pvie7.style.color="#b8c1ec";
     }
 });
 }
