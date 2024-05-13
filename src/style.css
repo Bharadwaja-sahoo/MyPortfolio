@@ -724,14 +724,14 @@ section{
   cursor: grab;
   user-select: none;
 }
-.carousel :where(.card, .img) {
+.carousel :where(.card,.img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .carousel .card {
   scroll-snap-align: start;
-  height: 342px;
+  height: 350px;
   list-style: none;
   background: #b8c1ec;
   cursor: pointer;
@@ -761,12 +761,21 @@ section{
       grid-auto-columns: 100%;
     }
 } */
+.card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
 .card img{
   width: 100%;
-  padding: 3%;
-  border-radius: 20px 20px 0px 0px;
+  height: 60%;
+}
+.card h2,a{
+    height: 40%;
 }
 .card a{
+    width: 8vw;
+    height: 7vw;
   margin-bottom: 3%;
   cursor: pointer;
   background-color: #232946;
@@ -778,7 +787,6 @@ section{
   box-shadow: 5px 5px 0px #1d2139;
   transition: all 0.2s;
   text-decoration: none;
-  width: 20%;
 }
 .card a:active{
   box-shadow: 0px 0px 0px #000;
@@ -793,6 +801,7 @@ section{
   font-size: 1.1vw;
   font-weight: 600;
   color: #b8c1ec;
+  cursor: pointer;
 }
 footer{
     width: 100%;

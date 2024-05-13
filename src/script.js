@@ -66,6 +66,8 @@ var pBox4=document.getElementById("pbox4");
 var pBox5=document.getElementById("pbox5");
 var pBox6=document.getElementById("pbox6");
 var pBox7=document.getElementById("pbox7");
+var pBox8=document.getElementById("pbox8");
+var pBox9=document.getElementById("pbox9");
 
 var workbox=document.getElementById("workLink");
 
@@ -76,6 +78,8 @@ var pbutton4=document.getElementById("pbutton4");
 var pbutton5=document.getElementById("pbutton5");
 var pbutton6=document.getElementById("pbutton6");
 var pbutton7=document.getElementById("pbutton7");
+var pbutton8=document.getElementById("pbutton8");
+var pbutton9=document.getElementById("pbutton9");
 
 var pview1=document.getElementById("pview1");
 var pview2=document.getElementById("pview2");
@@ -84,6 +88,8 @@ var pview4=document.getElementById("pview4");
 var pview5=document.getElementById("pview5");
 var pview6=document.getElementById("pview6");
 var pview7=document.getElementById("pview7");
+var pview8=document.getElementById("pview8");
+var pview9=document.getElementById("pview9");
 
 var moon=document.getElementById("moon")
 var sun=document.getElementById("sun")
@@ -180,6 +186,8 @@ input.addEventListener('change',function(){
         pBox5.style.backgroundColor="#232946";
         pBox6.style.backgroundColor="#232946";
         pBox7.style.backgroundColor="#232946";
+        pBox8.style.backgroundColor="#232946";
+        pBox9.style.backgroundColor="#232946";
 
         pBox1.style.color="#b8c1ec";
         pBox2.style.color="#b8c1ec";
@@ -188,6 +196,8 @@ input.addEventListener('change',function(){
         pBox5.style.color="#b8c1ec";
         pBox6.style.color="#b8c1ec";
         pBox7.style.color="#b8c1ec";
+        pBox8.style.color="#b8c1ec";
+        pBox9.style.color="#b8c1ec";
 
         pbutton1.style.backgroundColor="#b8c1ec";
         pbutton2.style.backgroundColor="#b8c1ec";
@@ -196,6 +206,8 @@ input.addEventListener('change',function(){
         pbutton5.style.backgroundColor="#b8c1ec";
         pbutton6.style.backgroundColor="#b8c1ec";
         pbutton7.style.backgroundColor="#b8c1ec";
+        pbutton8.style.backgroundColor="#b8c1ec";
+        pbutton9.style.backgroundColor="#b8c1ec";
 
         pview1.style.color="#232946";
         pview2.style.color="#232946";
@@ -204,6 +216,8 @@ input.addEventListener('change',function(){
         pview5.style.color="#232946";
         pview6.style.color="#232946";
         pview7.style.color="#232946";
+        pview8.style.color="#232946";
+        pview9.style.color="#232946";
     } 
     else {
         //container
@@ -295,6 +309,8 @@ input.addEventListener('change',function(){
         pBox5.style.backgroundColor="#b8c1ec";
         pBox6.style.backgroundColor="#b8c1ec";
         pBox7.style.backgroundColor="#b8c1ec";
+        pBox8.style.backgroundColor="#b8c1ec";
+        pBox9.style.backgroundColor="#b8c1ec";
 
         pBox1.style.color="#232946";
         pBox2.style.color="#232946";
@@ -303,6 +319,8 @@ input.addEventListener('change',function(){
         pBox5.style.color="#232946";
         pBox6.style.color="#232946";
         pBox7.style.color="#232946";
+        pBox8.style.color="#232946";
+        pBox9.style.color="#232946";
 
         pbutton1.style.backgroundColor="#232946"
         pbutton2.style.backgroundColor="#232946"
@@ -311,6 +329,8 @@ input.addEventListener('change',function(){
         pbutton5.style.backgroundColor="#232946"
         pbutton6.style.backgroundColor="#232946"
         pbutton7.style.backgroundColor="#232946"
+        pbutton8.style.backgroundColor="#232946"
+        pbutton9.style.backgroundColor="#232946"
         
         pview1.style.color="#b8c1ec";
         pview2.style.color="#b8c1ec";
@@ -319,6 +339,8 @@ input.addEventListener('change',function(){
         pview5.style.color="#b8c1ec";
         pview6.style.color="#b8c1ec";
         pview7.style.color="#b8c1ec";
+        pview8.style.color="#b8c1ec";
+        pview9.style.color="#b8c1ec";
     }
 });
 // link open
