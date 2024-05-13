@@ -408,6 +408,9 @@
         border-radius: 10px;
         color: #232946;
     }
+    .quicklink div{
+        margin-top: 0px;
+    }
     #foot2{
         width: 100%;
         height: 10%;
@@ -477,7 +480,7 @@
     }
     .box{
         width: calc(48.88% - 10px);
-        height:50vh;
+        height:45vh;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -487,14 +490,17 @@
         color: #b8c1ec;
         font-size: 1.5vw;
     }
-    .box a{
-        width: 20%;
-        height: 10%;
+    .workbotdiv a{
+        width: 35%;
+        height: 30%;
     }
-    .box a button{
+    .workbotdiv p{
+        font-size: 2.5vw;
+    }
+    .workbotdiv a button{
         width: 100%;
         height: 100%;
-        font-size: 1vw;
+        font-size: 2.5vw;
         cursor: pointer;
         color: #232946;
         background-color: #b8c1ec;
@@ -529,6 +535,27 @@
     #butoon-con button:active{
         box-shadow: 0px 0px 0px black;
         transform: translate(5px,5px);
+    }
+    .row1{
+        display: flex;
+    }
+    .row2{
+        display: none;
+    }
+    .row3{
+        display: none;
+    }
+    .row4{
+        display: none;
+    }
+    .row5{
+        display: none;
+    }
+    .row6{
+        display: none;
+    }
+    .row7{
+        display: none;
     }
 }
 
@@ -1148,11 +1175,11 @@
         color: #b8c1ec;
         font-size: 2.5vw;
     }
-    .box a{
-        width: 30%;
-        height: 15%;
+    .workbotdiv a{
+        width: 35%;
+        height: 30%;
     }
-    .box a button{
+    .workbotdiv a button{
         width: 100%;
         height: 100%;
         font-size: 2.5vw;
@@ -1190,5 +1217,26 @@
     #butoon-con button:active{
         box-shadow: 0px 0px 0px black;
         transform: translate(5px,5px);
+    }
+    .row1{
+        display: flex;
+    }
+    .row2{
+        display: none;
+    }
+    .row3{
+        display: none;
+    }
+    .row4{
+        display: none;
+    }
+    .row5{
+        display: none;
+    }
+    .row6{
+        display: none;
+    }
+    .row7{
+        display: none;
     }
 }

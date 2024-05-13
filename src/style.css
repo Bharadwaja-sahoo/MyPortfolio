@@ -662,7 +662,7 @@ section{
         transform: scale(1);
     }
     to{
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 }
 #workLink:active{
@@ -813,13 +813,15 @@ footer{
     justify-content: center;
     flex-direction: column;
     font-size: 1.2vw;
-    gap: 10%;
     color: #b8c1ec;
     background-color: #1d2139;
     border-radius: 10px;
     box-shadow: 0px 0px 20px #b8c1ec;
     z-index: 1;
     position: relative;
+}
+.quicklink div{
+    margin-top: 40px;
 }
 .footbox h2{
     position: absolute;
@@ -986,16 +988,16 @@ footer{
     overflow: hidden;
     border: 2px solid #b8c1ec;
 }
-#worktopdiv{
+.worktopdiv{
     width: 100%;
     height: 60%;
     border-bottom: 2px solid #b8c1ec;
 }
-#worktopdiv img{
+.worktopdiv img{
     width: 100%;
     height: 100%;
 }
-#workbotdiv{
+.workbotdiv{
     width: 100%;
     height: 40%;
     display: flex;
@@ -1003,11 +1005,11 @@ footer{
     justify-content: space-evenly;
     flex-direction: column;
 }
-#workbotdiv a{
+.workbotdiv a{
     width: 25%;
     height: 28%;
 }
-#workbotdiv a button{
+.workbotdiv a button{
     width: 100%;
     height: 100%;
     font-size: 1.5vw;

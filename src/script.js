@@ -1,5 +1,4 @@
-function handelModes(){
-    var input = document.getElementById('checkbox');
+var input = document.getElementById('checkbox');
 //container
 var toggleColor=document.getElementById("container");
 //nav bar
@@ -24,6 +23,7 @@ var cursorCircle=document.getElementById("cursor-circle");
 var chakri=document.getElementById("chakri");
 var chakri2=document.getElementById("chakri2");
 var chakri3=document.getElementById("chakri3");
+var abouth1=document.getElementById("abouth1");
 var aboutimg=document.getElementById("about-img");
 var aboutText=document.getElementById("about-div2");
 // skills
@@ -120,6 +120,7 @@ input.addEventListener('change',function(){
         //about
         chakri2.src="./assets/black.png";
         chakri3.src="./assets/black.png";
+        abouth1.style.color="#232946";
         aboutimg.style.border="5px solid #232946";
         aboutimg.style.boxShadow= "0px 0px 30px #232946"
         aboutText.style.color= "#232946";
@@ -234,6 +235,7 @@ input.addEventListener('change',function(){
         //about
         chakri2.src="./assets/white.png";
         chakri3.src="./assets/white.png";
+        abouth1.style.color="#b8c1ec";
         aboutimg.style.border="5px solid #b8c1ec";
         aboutimg.style.boxShadow= "0px 0px 30px #b8c1ec"
         aboutText.style.color= "#b8c1ec";
@@ -316,11 +318,9 @@ input.addEventListener('change',function(){
         pview4.style.color="#b8c1ec";
         pview5.style.color="#b8c1ec";
         pview6.style.color="#b8c1ec";
-        pvie7.style.color="#b8c1ec";
+        pview7.style.color="#b8c1ec";
     }
 });
-}
-handelModes();
 // link open
 function handelLinks(){
     links1.addEventListener('click', function () {
