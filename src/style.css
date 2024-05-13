@@ -984,7 +984,7 @@ footer{
     color: #b8c1ec;
     font-size: 1.5vw;
     overflow: hidden;
-    border: 2px solid #1d2139;
+    border: 2px solid #b8c1ec;
 }
 #worktopdiv{
     width: 100%;
@@ -1056,7 +1056,7 @@ footer{
 }
 #butoon-con button{
     width: 10vw;
-    height: 5vh;
+    height: 7vh;
     border: 2px solid black;
     border-radius: 10px;
     box-shadow: 5px 5px 0px black;
@@ -1064,29 +1064,30 @@ footer{
     color: #b8c1ec;
     font-size: 1.5vw;
     background-color: #232946;
+    cursor: pointer;
 }
 #butoon-con button:active{
     box-shadow: 0px 0px 0px black;
     transform: translate(5px,5px);
 }
-#row1{
+.row1{
     display: flex;
 }
-#row2{
+.row2{
     display: none;
 }
-#row3{
+.row3{
     display: none;
 }
-#row4{
+.row4{
     display: none;
 }
-#row5{
+.row5{
     display: none;
 }
-#row6{
+.row6{
     display: none;
 }
-#row7{
+.row7{
     display: none;
 }
