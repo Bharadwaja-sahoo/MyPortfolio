@@ -349,7 +349,7 @@ function handelLinks(){
         window.open("https://github.com/Bharadwaja-sahoo","_self");
     });
     links2.addEventListener('click', function() {
-        window.open("./assets/BHARADWAJA's Resume (1).pdf","_self");
+        window.open("./assets/BHARADWAJA Resume.pdf","_self");
     });
 }
 handelLinks();
