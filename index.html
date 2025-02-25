@@ -2,378 +2,410 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bharadwaja Sahoo(Portfolio)</title>
-    <link rel="icon" href="./assets/logo.png">
-    <link rel="stylesheet" href="./src/style.css">
-    <link rel="stylesheet" href="./src/mobileView.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="keywords" content="HTML5 Template">
+    <meta name="description" content="Bharadwaja Sahoo : Portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Bharadwaja Sahoo : Portfolio</title>
+    <link rel="icon" href="./Assets/images/logo.png">
+    <!-- links -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <link rel="stylesheet" href="./Assets/css/slide.css">
 </head>
 <body>
-    <div id="container">
-        <nav id="nav">
-            <div class="navbar" id="navbar">
-                <div id="logo">
-                    <a href="index.html">
-                        <img src="./assets/logo.png" alt="logo">
-                    </a>
-                </div>
-                <div id="menu" onclick="menuBar()">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div id="nav-div">
-                    <ul>
-                        <li><a id="nav-home" href="#home">HOME</a></li>
-                        <li><a id="nav-about" href="#about">ABOUT</a></li>
-                        <li><a id="nav-skills" href="#skills">SKILLS</a></li>
-                        <li><a id="nav-projects" href="#projects">PROJECTS</a></li>
-                        <li><a id="nav-work" href="./src/work.html">WORK</a></li>
-                        <li><a id="nav-contacts" href="#footer">CONTACT-ME</a></li>
-                    </ul>
-                </div>
-                <div id="switch">
-                    <input type="checkbox" class="checkbox" id="checkbox">
-                    <label for="checkbox" class="checkbox-label">
-                      <i id="moon" class="fas fa-moon"></i>
-                      <i id="sun" class="fas fa-sun"></i>
-                      <span class="ball"></span>
-                    </label>
-                </div>
-            </div>
-        </nav>
-        <div id="menudiv">
-            <div id="menu-bar">
-                <i class="cross fa-solid fa-xmark" onclick="crossBar()"></i>
-                <a onclick="menuBarClose()" href="#home">Home</a>
-                <a onclick="menuBarClose()" href="#about">About</a>
-                <a onclick="menuBarClose()" href="#skills">Skills</a>
-                <a onclick="menuBarClose()" href="#projects">Projects</a>
-                <a onclick="menuBarClose()" href="./src/work.html">Work</a>
-                <a onclick="menuBarClose()" href="#footer">Contact-Me</a>
-            </div>
+    <!-- Loader -->
+    <div id="loader">
+        <div class="spinner-grow" role="status">
+            <span class="sr-only">Loading...</span>
         </div>
-        <!-- Home section -->
-        <div id="home">
-            <div id="homeDiv" class="home-div home-div1">
-                <h1>Hi...!!!</h1>
-                <h1>I'm Bharadwaja Sahoo ...</h1>
-                <p>I am a <span id="bold"></span> with a passion for building
-                     user friendly sites.</p>
-                <div id="cv">
-                    <button class="links" id="links1"><i class="font-with-icon fa-brands fa-github"></i> GitHub</button>
-                    <button class="links" id="links2"><i class="font-with-icon fa-regular fa-file"></i> View CV</button>
-                </div>
-                <div id="social-media">
-                    <a href="https://www.facebook.com/bharadwajasahoo.ricku.9"><i id="fbook" class="fa-brands fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/rick_u_/"><i id="igram" class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/bharadwaja-sahoo-361369257/"><i id="ldin" class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-            <div class="home-div home-div2">
-                <div id="imgdiv">
-                    <div id="img1" class="img-div"><img src="./assets/1.jpg"></div>
-                    <div id="img2" class="img-div"><img src="./assets/2.jpg"></div>
-                    <div id="img3" class="img-div"><img src="./assets/3.jpg"></div>
-                    <div id="img4" class="img-div"><img src="./assets/4.jpg"></div>
-                </div>
-            </div>
-        </div>
-
-        <div id="welcome">
-            <div id="text1" class="text-area">
-                Hello,Hii,Namaste... <br>Welcome to my Portfolio...
-            </div>
-            <div id="text2" class="text-area-hover">
-                Hello,Hii,Namaste... <br>Welcome to my Portfolio...
-            </div>
-        </div>
-        <!-- about section -->
-        <div id="about">
-            <img id="chakri2" src="./assets/white.png">
-            <img id="chakri3" src="./assets/white.png">
-            <div id="about-div1">
-                <img id="about-img" src="./assets/profile.jpg" alt="Profile Picture">
-            </div>
-            <div id="about-div2">
-                <h1 id="abouth1">About Me:</h1>
-                <p>I have completed my Bachelor of Technology in <span>Mechanical Engineering</span> from the
-                   of <span>Biju pattanaik University</span>,Odisha ,India. I possess skills and knowledge
-                   that enable me to work on various web technologies such as HTML5
-                   ,Css,Js,React js,etc.... 
-                </p>
-                <p>
-                   I was born and brought up in a small town
-                   called <span>Dhenkanal</span> in the state of Odisha. My parents are Farmer who work hard to provide me with all
-                   . My father is a ShopKeeper and
-                   mother does domestic work. I'm the only child they have.
-                   I love to play cricket, watch movies when I get free time and love to travell everywhere.
-                   I also like to code
-                   and design websites which makes me happy...
-                </p>
-                <p>
-                    That's All About Me...
-                </p>
-            </div>
-        </div>
-        <!-- skill section -->
-        <section id="skillSection">
-            <div class="skill1" id="skills">
-                
-                <h1 id="sh1" class="heading1">Technical Skills</h1>
-    
-                <div class="Technical-bars">
-                    <div id="htmlbox" class="bar"><i class="fa-brands fa-html5"></i>
-                        <div class="info">
-                            <span>HTML</span>
-                        </div>
-                        <div class="progress-line html">
-                            <span id="html"></span>
-                        </div>
+    </div>
+    <!-- Loader -->
+    <main class="content">
+        <!-- head start -->
+        <header class="container-fluid p-4">
+            <nav class="container nav d-flex align-items-center justify-content-between" data-aos="fade-down">
+                <a href="index.html">
+                    <div class="logo p-3">
+                        <h2>Bharadwaja Sahoo</h2>
+                        <h2>Bharadwaja Sahoo</h2>
                     </div>
-                    <div id="cssbox" class="bar"><i class="fa-brands fa-css3-alt"></i>
-                        <div class="info">
-                            <span>CSS</span>
-                        </div>
-                        <div class="progress-line css">
-                            <span id="css"></span>
-                        </div>
+                </a>
+                <ul class="nav-list list-unstyled d-flex">
+                    <li class="p-3"><a class="text-decoration-none nav-list-a active" href="./index.html">Home</a></li>
+                    <li class="p-3"><a class="text-decoration-none nav-list-a"
+                            href="./Assets/pages/about.html">About</a></li>
+                    <li class="p-3"><a class="text-decoration-none nav-list-a"
+                            href="./Assets/pages/skills.html">Skills</a></li>
+                    <li class="p-3"><a class="text-decoration-none nav-list-a"
+                            href="./Assets/pages/projects.html">Projects</a></li>
+                    <li class="p-3"><a class="text-decoration-none nav-list-a"
+                            href="./Assets/pages/contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex">
+                    <div class="menu py-3" onclick="menuBar()">
+                        <i class="ri-menu-4-line"></i>
                     </div>
-                    <div id="jsbox" class="bar"><i class="fa-brands fa-js"></i>
-                        <div class="info">
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="progress-line javaScript">
-                            <span id="js"></span>
-                        </div>
-                    </div>
-                    <div id="javabox" class="bar"><i class="fa-brands fa-java"></i>
-                        <div class="info">
-                            <span>Java</span>
-                        </div>
-                        <div class="progress-line java">
-                            <span id="java"></span>
-                        </div>
-                    </div>
-                    <div id="reactbox" class="bar"><i class="fa-brands fa-react"></i>
-                        <div class="info">
-                            <span>React</span>
-                        </div>
-                        <div class="progress-line react">
-                            <span id="react"></span>
-                        </div>
-                    </div>
-                    <div id="bootbox" class="bar"><i class="fa-brands fa-bootstrap"></i>
-                        <div class="info">
-                            <span>Bootstrap</span>
-                        </div>
-                        <div class="progress-line boots">
-                            <span id="boots"></span>
-                        </div>
-                    </div>
-                    <div id="mongobox" class="bar"><i class="fa-solid fa-server"></i>
-                        <div class="info">
-                            <span>Mongo DB</span>
-                        </div>
-                        <div class="progress-line mongo">
-                            <span id="mongoDb"></span>
-                        </div>
-                    </div>
-                    <div id="sql-box" class="bar"><i class="fa-solid fa-database"></i>
-                        <div class="info">
-                            <span>SQL</span>
-                        </div>
-                        <div class="progress-line sql">
-                            <span id="sql"></span>
-                        </div>
+                    <div class="switch p-3">
+                        <i id="themeIcon" class="ri-moon-fill"></i>
                     </div>
                 </div>
-            </div>
-            <div class="skill2">
-                <h1 id="sh2" class="heading1">Professional Skills</h1>
-    
-                <div id="roundtext" class="radial-bars">
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle id="path1" class="path path-1" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">90%</div>
-                        <div class="text">Creativity</div>
+            </nav>
+        </header>
+        <!-- head end-->
+        <!-- home start -->
+        <section class="hero_section">
+            <div class="container">
+                <div class="row home">
+                    <div
+                        class="home-div col-md-6 col-sm-12 d-flex flex-column align-items-start justify-content-center">
+                        <h1 class="hero_text" data-aos="fade-up" data-aos-delay="100">Hi...!!!</h1>
+                        <h1 class="mb-4 hero_text" data-aos="fade-up" data-aos-delay="200" style="font-size: 50px;">I'm
+                            <span id="name">Bharadwaja Sahoo</span>...</h1>
+                        <p class="mb-4 hero_text" data-aos="fade-up" data-aos-delay="300" style="height: 40px;">I am a
+                            <span id="typed"></span> with a passion for building
+                            user friendly sites.</p>
+                        <div class="mb-4" data-aos="fade-up" data-aos-delay="400">
+                            <button class="btns" id="links1"><i class="font-with-icon fa-brands fa-github pe-1"></i>
+                                GitHub</button>
+                            <button class="btns ms-3" id="links2"><i class="font-with-icon fa-regular fa-file pe-1"></i>
+                                View CV</button>
+                        </div>
                     </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle id="path2" class="path path-2" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">80%</div>
-                        <div class="text">Communication</div>
-                    </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle id="path3" class="path path-3" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">75%</div>
-                        <div class="text">Problem Solving</div>
-                    </div>
-                    <div class="radial-bar">
-                        <svg x="0px" y="0px" viewBox="0 0 200 200">
-                            <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
-                            <circle id="path4" class="path path-4" cx="100" cy="100" r="80"></circle>
-                        </svg>
-                        <div class="percentage">85%</div>
-                        <div class="text">TeamWork</div>
+                    <div class="home-div col-md-6 col-sm-12 d-flex align-items-center justify-content-end">
+                        <div id="imgdiv" data-aos="fade-up">
+                            <div id="img1" class="img-div"><img src="./Assets/images/1.jpg"></div>
+                            <div id="img2" class="img-div"><img src="./Assets/images/2.jpg"></div>
+                            <div id="img3" class="img-div"><img src="./Assets/images/3.jpg"></div>
+                            <div id="img4" class="img-div"><img src="./Assets/images/4.jpg"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- project section -->
-        <div id="projects">
-            <h1 id="ph1" class="heading1">Project's</h1>
-            <a id="workLink" href="./src/work.html">My-WORK</a>
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                    <li id="pbox1" class="card">
-                        <img src="./assets/work/gym.png">
-                        <h2>Gym Website</h2>
-                        <a id="pbutton1" href="https://bharadwaja-sahoo.github.io/Gym-Website/">
-                            <button id="pview1">View</button>
-                        </a> 
-                    </li>
-                    <li id="pbox2" class="card">
-                        <img src="./assets/work/nike.png">
-                        <h2>Nike Re-Degign</h2>
-                        <a id="pbutton2" href="https://bharadwaja-sahoo.github.io/Nike-landing-page/">
-                            <button id="pview2">View</button>
-                        </a> 
-                    </li>
-                    <li id="pbox3" class="card">
-                        <img src="./assets/work/shoppingkaro in React.js.png">
-                        <h2>shoppingkaro(React.js)</h2>
-                        <a id="pbutton3" href="https://shoppingkaro-react.onrender.com/">
-                            <button id="pview3">View</button>
-                        </a> 
-                    </li>
-                  <li id="pbox4" class="card">
-                      <img src="./assets/work/amazon.png">
-                      <h2>Amazon Website</h2>
-                      <a id="pbutton4" href="https://bharadwaja-sahoo.github.io/Amazon-Clone/">
-                          <button id="pview4">View</button>
-                      </a> 
-                  </li>
-                  <li id="pbox5" class="card">
-                      <img src="./assets/work/lens.png">
-                      <h2>Lenskart Website</h2>
-                      <a id="pbutton5" href="https://bharadwaja-sahoo.github.io/Lenskart-Clone/">
-                          <button id="pview5">View</button>
-                      </a>
-                  </li>
-                  <li id="pbox6" class="card">
-                      <img src="./assets/work/food.png">
-                      <h2>Food site</h2>
-                      <a id="pbutton6" href="https://bharadwaja-sahoo.github.io/FoodWeb/">
-                          <button id="pview6">View</button>
-                      </a>
-                  </li>
-                  <li id="pbox7" class="card">
-                      <img src="./assets/work/bubble.png">
-                      <h2>Bubble Game</h2>
-                      <a id="pbutton7" href="https://bharadwaja-sahoo.github.io/Bubbles-Game/">
-                          <button id="pview7">View</button>
-                      </a>
-                  </li>
-                  <li id="pbox8" class="card">
-                      <img src="./assets/work/shop.png">
-                      <h2>shoppingKaro.com</h2>
-                      <a id="pbutton8" href="https://bharadwaja-sahoo.github.io/shoppingKaro.com/">
-                          <button id="pview8">View</button>
-                      </a> 
-                  </li>
-                  <li id="pbox9" class="card">
-                      <img src="./assets/work/medi.png">
-                      <h2>Medical site</h2>
-                      <a id="pbutton9" href="https://bharadwaja-sahoo.github.io/Medical-site/">
-                          <button id="pview9">View</button>
-                      </a> 
-                  </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
-              </div>
-        </div>
-        <!-- footer -->
-        <footer id="footer">
-            <div id="foot1">
-                <div class="footbox">
-                    <a href="index.html">
-                        <img src="./assets/logo.png">
-                    </a>
-                    <h2>Contact Me</h2>
-                    <p>Email: bharadwajasahoo96@gmail.com</p>
-                    <p>PhoneNo: +91-7735047587</p>
+        <!-- home end -->
+        <!-- big intro start -->
+        <section id="motive" class="intro-section">
+            <div class="container d-flex justify-content-center align-items-center flex-column">
+                <p class="hero_text">I'm <span class="spans fst-italic" data-aos="fade-down">Bharadwaja </span>
+                    <span id="onespan" data-aos="fade-up"></span> <br>
+                    an UI <span id="twospan" data-aos="fade-up"></span>
+                    <span class="spans fst-italic" data-aos="fade-down">Designer</span><br>
+                    <span class="spans fst-italic" data-aos="fade-down">Based </span> in Odisha
+                    <span id="threespan" data-aos="fade-up"></span>
+                </p>
+                <p class="hero_text text-center mb-4" data-aos="fade-up">I'm Doing this as a way to practice my design
+                    skills, explore <br> different styles and have fun...</p>
+                <a href="mailto:bharadwajasahoo96@gmail.com" class="buttons text-decoration-none mb-4"
+                    data-aos="fade-up">Connect With Me <i class="ri-arrow-right-up-line"></i></a>
+                <div data-aos="fade-up">
+                    <a class="back text_rev social-links" href="https://www.facebook.com/bharadwajasahoo.ricku.9"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a class="back text_rev social-links mx-2" href="https://www.instagram.com/rick_u_/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="back text_rev social-links" href="https://www.linkedin.com/in/bharadwaja-sahoo-361369257/"><i
+                            class="fa-brands fa-linkedin"></i></a>
                 </div>
-                <div class="footbox quicklink">
-                    <h2>Quick Links</h2>
-                    <div>
-                        <i class="fa-solid fa-house"></i>
-                        <a href="#home">Home</a>
+            </div>
+        </section>
+        <!-- big intro end -->
+        <!-- about start -->
+        <section class="about-section" style="overflow: hidden;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 d-flex align-items-center justify-content-center" data-aos="fade-right">
+                        <div class="about-img">
+                            <img src="./Assets/images/profile.jpg" alt="">
+                        </div>
                     </div>
-                    <div>
-                        <i class="fa-solid fa-address-card"></i>
-                        <a href="#about">About</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-briefcase"></i>
-                        <a href="#skills">Skills</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <a href="#projects">Projects</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <a href="./src/work.html">Work</a>
-                    </div>
-                    <div>
-                        <i class="fa-solid fa-user"></i>
-                        <a href="#footer">Contact-Me</a>
-                    </div>
-                </div>
-                <div class="footbox">
-                    <h2>Follow Me...</h2>
-                    <div id="linkstore">
-                        <a class="footlink" href="https://www.facebook.com/bharadwajasahoo.ricku.9"><i class="fa-brands fa-facebook"></i></a>
-                        <a class="footlink" href="https://www.instagram.com/rick_u_/"><i class="fa-brands fa-instagram"></i></a>
-                        <a class="footlink" href="https://www.linkedin.com/in/bharadwaja-sahoo-361369257/"><i class="fa-brands fa-linkedin"></i></a>
-                        <a class="footlink" href="https://github.com/Bharadwaja-sahoo"><i class="fa-brands fa-github"></i></a>
+                    <div class="col-md-6 about-text" data-aos="fade-left">
+                        <h1 class="hero_text text-center heading mb-4">About Me</h1>
+                        <p class="hero_text">I have completed my Bachelor of Technology in Mechanical Engineering from
+                            Biju Patnaik University, Odisha, India. Over time, I have developed a strong interest in
+                            UI/UX design and web technologies, allowing me to work with HTML5, CSS, JavaScript,
+                            React.js, and .NET UI.</p>
+                        <p class="hero_text">To enhance my skills, I pursued an internship as a UI Designer, where I
+                            worked extensively with .NET UI components and gained hands-on experience in building
+                            interactive user interfaces. During this period, I also contributed to several projects,
+                            collaborating with teams to design and develop engaging digital experiences.</p>
+                        <!-- <p class="hero_text">I was born and brought up in Dhenkanal, Odisha, a small yet beautiful town. My parents have always been my biggest support system—my father runs a Business, and my mother manages domestic work. Being their only child, I deeply appreciate their hard work and sacrifices, which have shaped me into who I am today.</p> -->
+                        <p class="hero_text">Beyond coding and designing, I have a passion for cricket, traveling, and
+                            watching movies. Exploring new places and learning new technologies always excites me, and I
+                            continuously strive to improve my skills and stay updated with the latest trends in Web
+                            development.</p>
+                        <p class="hero_text">
+                            That’s all about me! 🚀
+                        </p>
                     </div>
                 </div>
             </div>
-            <div id="foot2">
-                <p>Copyright</p>
-                <p>© 2024</p>
-                <p>All rights reserved</p>
-                <p>Designed By: BHARADWAJA SAHOO...!!!</p>
+        </section>
+        <!-- about end -->
+        <!-- work exp start -->
+        <section class="exp-section mt-5">
+            <h2 class="heading hero_text text-center mb-4" data-aos="fade-up">Work Experience</h2>
+            <div class="container" data-aos="fade-up">
+                <div class="line hero_text">
+                    <div class="companyimg">
+                        <a href="https://www.compugraphs.org/">
+                            <img src="./Assets/images/company.png" alt="">
+                        </a>
+                    </div>
+                    <div class="linediv">
+                        <h1>Compugraph Softtech Solution PVT. LTD , BBSR</h1>
+                    </div>
+                    <pre>
+                        Internship On UI Designer 
+                        / 2024 JUN - 2025 JAN
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <section class="exp-section mt-5">
+            <h2 class="heading hero_text text-center mb-4" data-aos="fade-up">Freelancing</h2>
+            <div class="container" data-aos="fade-up">
+                <div class="line hero_text">
+                    <div class="companyimg">
+                        <a href="https://tech-ed-solution.netlify.app/">
+                            <img src="./Assets/images/icon.png" alt="">
+                        </a>
+                    </div>
+                    <div class="linediv">
+                        <h1>Tech ED Institute, Bengaluru, Karnataka</h1>
+                    </div>
+                    <pre>
+                        Website Designer 
+                        / 2025
+                    </pre>
+                </div>
+            </div>
+        </section>
+        <!-- work exp end -->
+        <!-- skill start -->
+        <section class="skill-section">
+            <div class="main-section d-flex align-items-center justify-content-center flex-column">
+                <h1 class="mb-5 hero_text heading" data-aos="fade-up">Skills</h1>
+                <div class="skills d-flex align-items-center justify-content-center">
+                    <h2 class="hero_text skill_h2" id="react"><i class="ri-reactjs-fill"></i> React Js</h2>
+                    <h2 class="hero_text skill_h2" id="net">.Net UI</h2>
+                    <h2 class="hero_text skill_h2" id="html"><i class="ri-html5-fill"></i> HTML</h2>
+                    <h2 class="hero_text skill_h2" id="css"><i class="ri-css3-fill"></i> CSS</h2>
+                    <h2 class="hero_text skill_h2" id="javascript"><i class="ri-javascript-fill"></i> Java Script</h2>
+                    <h2 class="hero_text skill_h2" id="jquery">jQuery</h2>
+                    <h2 class="hero_text skill_h2" id="bootstrap"><i class="ri-bootstrap-fill"></i> Bootstrap</h2>
+                    <h2 class="hero_text skill_h2" id="tailwind"><i class="ri-tailwind-css-fill"></i> Tailwind Css</h2>
+                    <h2 class="hero_text skill_h2" id="ajax">Ajax</h2>
+                    <h2 class="hero_text skill_h2" id="gsap">GSAP Animation</h2>
+                    <h2 class="hero_text skill_h2" id="node"><i class="ri-nodejs-fill"></i> Node Js</h2>
+                    <h2 class="hero_text skill_h2" id="express">Express Js</h2>
+                    <h2 class="hero_text skill_h2" id="sql"><i class="ri-database-2-fill"></i> SQL</h2>
+                    <h2 class="hero_text skill_h2" id="mongo">Mongo DB</h2>
+                    <h2 class="hero_text skill_h2" id="git"><i class="ri-git-commit-fill"></i> GIT</h2>
+                    <h2 class="hero_text skill_h2" id="github"><i class="ri-github-fill"></i> Git Hub</h2>
+                </div>
+            </div>
+        </section>
+        <!-- skill end -->
+        <!-- project start -->        
+        <section class="project-section">
+            <h1 class="mb-5 hero_text heading" data-aos="fade-up">Projects</h1>
+            <div class="we-carousel" data-aos="fade-up">
+                <div class="back text_rev we-arrow left">&#10094;</div>
+                <div class="we-card-container">
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Dental Care.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Dental-site/" class="text_rev text-decoration-none">Dento Care</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Dental-site/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back">
+                    <img src="./Assets/images/projects/Travel site.png" alt=""> 
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Travel-web/" class="text_rev text-decoration-none">Travel Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Travel-web/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Retro site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Retro-site/" class="text_rev text-decoration-none">Retro site</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Retro-site/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back">
+                    <img src="./Assets/images/projects/Portfolio.png" alt=""> 
+                    <h3><a href="https://bharadwaja-sahoo.github.io/MyPortfolio/" class="text_rev text-decoration-none">My Portfolio</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/MyPortfolio/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/My Workshop.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/MyWorkShop/" class="text_rev text-decoration-none">My Workshop</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/MyWorkShop/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Animated site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Animated-website/" class="text_rev text-decoration-none">Animated Website</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Animated-website/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Coffee Shop.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/coffeeSHOP/" class="text_rev text-decoration-none">Coffee Shop</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/coffeeSHOP/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/nike site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Nike-landing-page/" class="text_rev text-decoration-none">Nike Redesign</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Nike-landing-page/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Gym Site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Gym-Website/" class="text_rev text-decoration-none">Gym Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Gym-Website/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Hospital Site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Hospital-website/" class="text_rev text-decoration-none">Hospital Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Hospital-website/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/medical site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Medical-site/" class="text_rev text-decoration-none">Medical Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Medical-site/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/shopping karo.com.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/shoppingKaro.com/" class="text_rev text-decoration-none">shoppingkaro.com</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/shoppingKaro.com/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/food site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/food-Website/" class="text_rev text-decoration-none">Food Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/food-Website/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/burger site.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/FoodWeb/" class="text_rev text-decoration-none">Burger Web</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/FoodWeb/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/image generator.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/AI-Image-Creator/" class="text_rev text-decoration-none">Ai Image generate</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/AI-Image-Creator/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/age calculator.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Age-calculator/" class="text_rev text-decoration-none">Age Calculator</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Age-calculator/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Bubble Game.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/Bubbles-Game/" class="text_rev text-decoration-none">Bubble game</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/Bubbles-Game/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/Digital time.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/DigitalClockWithMonth/" class="text_rev text-decoration-none">Digital Clock</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/DigitalClockWithMonth/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                  <div class="we-card back"> 
+                    <img src="./Assets/images/projects/time.png" alt="">
+                    <h3><a href="https://bharadwaja-sahoo.github.io/DigitalClock/" class="text_rev text-decoration-none">Clock</a></h3>
+                    <a href="https://bharadwaja-sahoo.github.io/DigitalClock/" class="card-button"><i class="fa-solid fa-arrow-right"></i></a>
+                  </div>
+                </div>
+            <div class="back text_rev we-arrow right">&#10095;</div>
+            </div>
+        </section>
+        <!-- project end -->
+        <!-- resume start -->
+        <section id="resume-section" class="d-flex align-items-center justify-content-center flex-column">
+            <div class="resume d-flex align-items-center justify-content-center flex-column">
+                <div id="imgOne" class="img">
+                    <img src="./Assets/images/resume/row-1.jpg" alt="">
+                </div>
+                <div id="imgTwo" class="img">
+                    <img src="./Assets/images/resume/row-2.jpg" alt="">
+                </div>
+                <div id="imgThree" class="img">
+                    <img src="./Assets/images/resume/row-3.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- resume end -->
+        <!-- contact start -->
+        <section class="contact-section d-flex align-items-center justify-content-center flex-column">
+            <h1 class="text_rev text-center" style="font-family: playfair; font-size: 80px;" data-aos="fade-up">Let's <span
+                    class="spans-rev fst-italic">Connect</span></h1>
+            <p class="mt-3 mb-4 text-center text_rev" data-aos="fade-up">Feel free to contact me if having any questions. I'm available for
+                <br> new projects or just chatting.</p>
+            <a href="mailto:bharadwajasahoo96@gmail.com" class="buttons-rev text-decoration-none mb-4" data-aos="fade-up">Connect With Me
+                <i class="ri-arrow-right-up-line"></i></a>
+        </section>
+        <!-- contact end -->
+        <hr style="padding: 1px; margin: 0 0;">
+        <!-- footer start -->
+        <footer class="footer-section">
+            <div class="container pt-5">
+                <div class="row pb-5 pt_80 bottom_line position-relative">
+                    <div class="col-xl-3">
+                        <ul class="flex-column mb-5 mb-xl-0">
+                            <li class="list-unstyled mb-3 text-center">
+                                <div class="logo p-4">
+                                    <h2>Bharadwaja Sahoo</h2>
+                                    <h2>Bharadwaja Sahoo</h2>
+                                </div>
+                            </li>
+                            <li class="list-unstyled text_rev text-center">
+                                © 2024-2025 All Rights Reserved. <br> 
+                                Designed by <span class="fw-bold">Bharadwaja Sahoo</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="flex-column">
+                            <li class="mb-4 list-unstyled">
+                                <span class="text_rev d-block footer-title fs-17 pb-2">Contact Me</span>
+                            </li>
+                            <li class="list-unstyled"><a href="mailto:bharadwajasahoo96@gmail.com" class="text-decoration-none lh-30 text_rev"><span class="arrow me-2">→</span>bharadwajasahoo96@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="flex-column">
+                            <li class="mb-4 list-unstyled"><span class="d-block footer-title fs-17 pb-2 text_rev">Useful Links</span></li>
+                            <li class="list-unstyled"><a href="./index.html" class="text-decoration-none text_rev lh-30"><span class="arrow me-2">→</span>Home</a></li>
+                            <li class="list-unstyled"><a href="./Assets/pages/about.html" class="text-decoration-none text_rev lh-30"><span class="arrow me-2">→</span>About Us</a></li>
+                            <li class="list-unstyled"><a href="./Assets/pages/skills.html" class="text-decoration-none text_rev lh-30"><span class="arrow me-2">→</span>Skills</a></li>
+                            <li class="list-unstyled"><a href="./Assets/pages/projects.html" class="text-decoration-none text_rev lh-30"><span class="arrow me-2">→</span>Projects</a></li>
+                            <li class="list-unstyled"><a href="./Assets/pages/contact.html" class="text-decoration-none text_rev lh-30"><span class="arrow me-2">→</span>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul class="flex-column">
+                            <li class="mb-4 list-unstyled text_rev"><span class="d-block footer-title fs-17 pb-2">Social Links</span></li>
+                            <ul class="d-flex list-unstyled mt-4">
+                                <li><a class="align-items-center d-flex justify-content-center me-2 text-decoration-none hero_text social_icon" href="https://www.facebook.com/bharadwajasahoo.ricku.9" rel="nofollow" title="Facebook" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a class="align-items-center d-flex justify-content-center me-2 text-decoration-none hero_text social_icon" href="https://www.instagram.com/rick_u_/" rel="nofollow" title="Instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a class="align-items-center d-flex justify-content-center me-2 text-decoration-none hero_text social_icon" href="https://www.linkedin.com/in/bharadwaja-sahoo-361369257/" rel="nofollow" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a class="align-items-center d-flex justify-content-center me-2 text-decoration-none hero_text social_icon" href="https://github.com/Bharadwaja-sahoo" rel="nofollow" title="Github" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                                <li><a class="align-items-center d-flex justify-content-center me-2 text-decoration-none hero_text social_icon" href="https://www.youtube.com/@rick_u_" rel="nofollow" title="Youtube" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>                
             </div>
         </footer>
-
-        <!-- chakri -->
-        <div class="scroll-bar-container">
-            <img id="chakri" src="./assets/white.png">
-        </div>
-
-        <!-- cursor -->
-        <div id="cursor"></div>
-        <div id="cursor-circle"></div>
-    </div>
-
-
-
-    <!-- script -->
-    <script src="./src/scrollreveal.min.js"></script>
+        <!-- footer end -->
+    </main>
+    <!-- scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.5/dist/lenis.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
-    <script src="./src/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./Assets/js/script.js"></script>
+    <script src="./Assets/js/slide.js"></script>
 </body>
 </html>

@@ -1,0 +1,134 @@
+.project-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 300px;
+}
+  
+.we-carousel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    z-index: 0;
+}
+  
+.we-card-container {
+    width: 250px;
+    height: 300px;
+    position: relative;
+}
+  
+.we-card {
+    width: 250px;
+    height: 300px;
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease;
+    filter: none;
+}
+
+.we-card img{
+    width: 80%;
+}
+  
+.we-card h3 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-button{
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    align-content: center;
+    color: var(--dark);
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    transform: rotate(-45deg);
+    border: 2px solid var(--dark);
+    transition: 0.4s ease;
+    position: absolute;
+    left: 5%;
+}
+
+.we-card:hover .card-button{
+    color: #fff !important;
+    background: #121629 !important;
+}
+  
+.we-card.active {
+    opacity: 1;
+    z-index: 2;
+    transform: translateX(0);
+}
+  
+.we-card.prev-1,
+.we-card.next-1 {
+    opacity: 0.5;
+    filter: blur(4px);
+    z-index: 1;
+}
+  
+.we-card.prev-2,
+.we-card.next-2 {
+    opacity: 0.2;
+    filter: blur(6px);
+    z-index: 1;
+}
+  
+.we-card.prev-3,
+.we-card.next-3 {
+    opacity: 0;
+}
+  
+.we-card.prev-1 {
+    transform: translateX(-230px) rotate(-10deg) translateY(20px);
+}
+  
+.we-card.next-1 {
+    transform: translateX(230px) rotate(10deg) translateY(20px);
+}
+  
+.we-card.prev-2 {
+    transform: translateX(-483px) rotate(-20deg) translateY(80px);
+}
+  
+.we-card.next-2 {
+    transform: translateX(483px) rotate(20deg) translateY(80px);
+}
+  
+.we-card.prev-3 {
+    transform: translateX(-697px) rotate(-30deg) translateY(172px);
+}
+  
+.we-card.next-3 {
+    transform: translateX(697px) rotate(30deg) translateY(172px);
+}
+  
+.we-arrow {
+    font-size: 25px;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 18px;
+    margin: 10px;
+    z-index: 20;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+  
+.we-arrow:hover {
+    color: #555 !important;
+}  
