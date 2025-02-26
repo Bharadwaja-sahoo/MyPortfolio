@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./Assets/css/style.css">
     <link rel="stylesheet" href="./Assets/css/slide.css">
 </head>
@@ -48,7 +49,7 @@
                             href="./Assets/pages/contact.html">Contact</a></li>
                 </ul>
                 <div class="d-flex">
-                    <div class="menu py-3" onclick="menuBar()">
+                    <div class="menu p-3" onclick="menuBar()">
                         <i class="ri-menu-4-line"></i>
                     </div>
                     <div class="switch p-3">
@@ -57,6 +58,17 @@
                 </div>
             </nav>
         </header>
+        <div id="menudiv">
+            <div id="menu-bar">
+                <img src="./Assets/images/my_stamp.png" class="animate__animated animate__pulse animate__infinite" alt="">
+                <i class="cross fa-solid fa-xmark animate__animated animate__headShake animate__infinite" onclick="crossBar()"></i>
+                <a onclick="menuBarClose()" href="./index.html">Home</a>
+                <a onclick="menuBarClose()" href="./Assets/pages/about.html">About</a>
+                <a onclick="menuBarClose()" href="./Assets/pages/skills.html">Skills</a>
+                <a onclick="menuBarClose()" href="./Assets/pages/projects.html">Projects</a>
+                <a onclick="menuBarClose()" href="./Assets/pages/contact.html">Contact</a>
+            </div>
+        </div>
         <!-- head end-->
         <!-- home start -->
         <section class="hero_section">
@@ -159,9 +171,8 @@
                     <div class="linediv">
                         <h1>Compugraph Softtech Solution PVT. LTD , BBSR</h1>
                     </div>
-                    <pre>
-                        Internship On UI Designer 
-                        / 2024 JUN - 2025 JAN
+                    <pre>              Internship On UI Designer 
+              / 2024 JUN - 2025 JAN
                     </pre>
                 </div>
             </div>
@@ -178,9 +189,8 @@
                     <div class="linediv">
                         <h1>Tech ED Institute, Bengaluru, Karnataka</h1>
                     </div>
-                    <pre>
-                        Website Designer 
-                        / 2025
+                    <pre>              Website Designer 
+              / 2025
                     </pre>
                 </div>
             </div>
@@ -318,8 +328,8 @@
         </section>
         <!-- project end -->
         <!-- resume start -->
-        <section id="resume-section" class="d-flex align-items-center justify-content-center flex-column">
-            <div class="resume d-flex align-items-center justify-content-center flex-column">
+        <section id="resume-section" class="d-flex align-items-center justify-content-center">
+            <div class="resume d-flex align-items-center justify-content-center flex-column" style="gap: 0px !important;">
                 <div id="imgOne" class="img">
                     <img src="./Assets/images/resume/row-1.jpg" alt="">
                 </div>

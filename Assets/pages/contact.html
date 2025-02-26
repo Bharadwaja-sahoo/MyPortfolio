@@ -55,7 +55,7 @@
                     </li>
                 </ul>
                 <div class="d-flex">
-                    <div class="menu py-3" onclick="menuBar()">
+                    <div class="menu p-3" onclick="menuBar()">
                         <i class="ri-menu-4-line"></i>
                     </div>
                     <div class="switch p-3">
@@ -64,6 +64,17 @@
                 </div>
             </nav>
         </header>
+        <div id="menudiv">
+            <div id="menu-bar">
+                <img src="../images/my_stamp.png" alt="">
+                <i class="cross fa-solid fa-xmark" onclick="crossBar()"></i>
+                <a onclick="menuBarClose()" href="../../index.html">Home</a>
+                <a onclick="menuBarClose()" href="./about.html">About</a>
+                <a onclick="menuBarClose()" href="./skills.html">Skills</a>
+                <a onclick="menuBarClose()" href="./projects.html">Projects</a>
+                <a onclick="menuBarClose()" href="./contact.html">Contact</a>
+            </div>
+        </div>
         <!-- head end-->
         <!-- contact start -->
         <section class="contact-section d-flex align-items-center justify-content-center flex-column">

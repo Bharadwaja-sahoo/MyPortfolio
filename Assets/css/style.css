@@ -429,6 +429,7 @@ nav {
 }
 
 #imgThree {
+    margin-top: -1px;
     transform: perspective(1000px) rotateX(-90deg);
 }
 
@@ -510,6 +511,62 @@ nav {
     border-bottom: 1px solid #333;
 }
 
+#menu-bar{
+    width: 100%;
+    height: 100vh;
+    background-color: #181a2471;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    animation-name: menuBar;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: 0.5s;
+}
+#menu-bar img{
+    width: 50%;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+#menu-bar a{
+    width: 100%;
+    height: 10%;
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5sease;
+}
+#menu-bar a:hover{
+    background-color: var(--dark);
+    color: var(--white);
+}
+@keyframes menuBar{
+    0%{
+        transform: translate(-100vw,0);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.cross{
+    font-size: 35px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: var(--white);
+}
+
+
 #loader {
     position: fixed;
     top: 0;
@@ -544,6 +601,11 @@ body.loading {
         justify-content: center !important;
     }
 
+    .logo h2 {
+        top: 3px;
+        font-size: 22px;
+    }
+
     .menu,
     .switch {
         font-size: 24px;
@@ -576,7 +638,7 @@ body.loading {
 
     .main-section h2 {
         padding: 10px 20px;
-        font-size: 22px;
+        font-size: 15px;
     }
 
     .home {
@@ -586,6 +648,10 @@ body.loading {
 
     .home-div {
         padding: 0px 20px;
+    }
+
+    #motive {
+        padding-top: 130px;
     }
 
     #motive p:nth-child(1) {
@@ -638,6 +704,9 @@ body.loading {
         width: auto;
         height: 100%;
         padding: 20px 0px;
+    }
+    #imgThree {
+        margin-top: 0px;
     }
 }
 
